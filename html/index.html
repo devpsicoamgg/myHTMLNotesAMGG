@@ -14,6 +14,57 @@
   <link rel="icon"
     href="https://raw.githubusercontent.com/devpsicoamgg/elementsdevamgg-/main/favicons/1590029575811.png"
     sizes="95x95" />
+  <style>
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    h2 {
+      color: #007bff;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      text-align: justify;
+    }
+
+    img {
+      border: 1px solid #ccc;
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    ol {
+      color: #555;
+    }
+
+    details summary {
+      font-size: 16px;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    code {
+      background-color: #f99797;
+      border: 1px solid #ccc;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+
   <!-- Permite posicionamiento-->
 </head>
 
@@ -24,7 +75,7 @@
     HTML significa Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language.
     Está constituido por tags o etiquetas que son las que muestran todo el contenido, es como el esqueleto.
     <br>
-    <img src="./img/tableHtml.png" width=20%/>
+    <img src="./img/tableHtml.png" width=80% />
     <br>
     Segun MDN los tags se agrupan en subgrupos:
   </p>
@@ -40,7 +91,7 @@
             <summary> <b> <code> &lt;!DOCTYPE html&gt; </code> </b> <br> El elemento HTML (o elemento HTML raiz)
               representa la raiz de un documento HTML. El resto de elementos descienden de este elemento. </summary>
             <br>
-            <summary>  <b> <code>&lt;html lang="es"&gt;</code> </b> <br> Tema de lenguaje, no ha de ir en metadatos sino
+            <summary> <b> <code>&lt;html lang="es"&gt;</code> </b> <br> Tema de lenguaje, no ha de ir en metadatos sino
               abajo de la etiqueta HTML</summary>
       </details>
     </li>
@@ -69,7 +120,7 @@
           </li>
           <li>
             <summary> <b> <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</code>
-            </b> <br> Temas de renderización a diversos dispositivos </summary> <br>
+              </b> <br> Temas de renderización a diversos dispositivos </summary> <br>
           </li>
           <li>
             <summary><b> <code>&lt;title>BLA,BLA,BLA&lt;/title&gt;</code> </b> <br> El titulo que se mostrará en la
@@ -94,7 +145,7 @@
               archivo de script JavaScript </summary> <br>
           </li>
           <li>
-            <summary> <b><code>&lt;/head&gt;</code> </b> <br> Cierre de cabecera </summary> 
+            <summary> <b><code>&lt;/head&gt;</code> </b> <br> Cierre de cabecera </summary>
           </li>
         </ul>
       </details>
@@ -104,32 +155,41 @@
     <!-- SALTO -->
     <li>
       <details>
-        <summary>Seccionamiento del contenido - Semántica - ➡️(9)➡️ <br> 
+        <summary>Seccionamiento del contenido - Semántica - ➡️(9)➡️ <br>
           <mark>|</mark> <code>&lt;adres&gt;</code>
-          <mark>|</mark> <code>&lt;article&gt;</code> 
-          <mark>|</mark> <code>&lt;aside&gt;</code> 
-          <mark>|</mark> <code>&lt;footer&gt;</code> <mark>|</mark> <code>&lt;header&gt;</code> 
-          <mark>|</mark> <code> &lt;h1&gt; a &lt;h6&gt;</code> <mark>|</mark> <code>&lt;main&gt;</code> 
+          <mark>|</mark> <code>&lt;article&gt;</code>
+          <mark>|</mark> <code>&lt;aside&gt;</code>
+          <mark>|</mark> <code>&lt;footer&gt;</code> <mark>|</mark> <code>&lt;header&gt;</code>
+          <mark>|</mark> <code> &lt;h1&gt; a &lt;h6&gt;</code> <mark>|</mark> <code>&lt;main&gt;</code>
           <mark>|</mark> <code>&lt;nav&gt;</code> <mark>|</mark> <code>&lt;section&gt;</code> <mark>|</mark>
 
         </summary> Dividir y organizar el contenido de una página web en
-          secciones lógicas y significativas utilizando etiquetas HTML apropiadas. <br> TEMA MUY CONEXO A MAQUETACIÓN<br> <br>
+        secciones lógicas y significativas utilizando etiquetas HTML apropiadas. <br> TEMA MUY CONEXO A MAQUETACIÓN<br>
+        <br>
         <ul>
           <summary> <b><code>&lt;adres&gt;</code> </b> <br> Aporta información de contact o direcciones.</summary> <br>
-          <summary> <b><code>&lt;article&gt;</code> </b> <br> Pedazo de codigo a reutilizar. Sección autocontenida. </summary> <br>
-          <summary> <b><code>&lt;aside&gt;</code> </b> <br> Sección de una página que consiste en contenido que está indirectamente
-            relacionado con el contenido principal del documento. Contenido secundario. </summary> <br>
-          <summary> <b><code>&lt;footer&gt;</code> </b> <br>  Pie de página para el contenido de sección más cercano o el elemento
-            raíz de sección. </summary> <br>
-          <summary><b><code>&lt;header&gt;</code> </b> <br>  grupo de ayudas introductorias o de navegación. Cabeceras </summary>
-          <br>
-          <summary> <b><code>&lt;h1&gt;,&lt;h2&gt;&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code> </b> <br>  Encabezados
-            deja titularizar. Los niveles con jerarquias. Tambien CO Un solo. Solo 1 H1 <code>&lt;h1&gt;</code>. 
+          <summary> <b><code>&lt;article&gt;</code> </b> <br> Pedazo de codigo a reutilizar. Sección autocontenida.
           </summary> <br>
-          <summary> <b> <code>&lt;main&gt;</code> </b> <br>  contenido principal del &lt;body&gt; de un documento o aplicación, SOLO 1
+          <summary> <b><code>&lt;aside&gt;</code> </b> <br> Sección de una página que consiste en contenido que está
+            indirectamente
+            relacionado con el contenido principal del documento. Contenido secundario. </summary> <br>
+          <summary> <b><code>&lt;footer&gt;</code> </b> <br> Pie de página para el contenido de sección más cercano o el
+            elemento
+            raíz de sección. </summary> <br>
+          <summary><b><code>&lt;header&gt;</code> </b> <br> grupo de ayudas introductorias o de navegación. Cabeceras
+          </summary>
+          <br>
+          <summary> <b><code>&lt;h1&gt;,&lt;h2&gt;&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code> </b> <br>
+            Encabezados
+            deja titularizar. Los niveles con jerarquias. Tambien CO Un solo. Solo 1 H1 <code>&lt;h1&gt;</code>.
+          </summary> <br>
+          <summary> <b> <code>&lt;main&gt;</code> </b> <br> contenido principal del &lt;body&gt; de un documento o
+            aplicación, SOLO 1
             MAIN </summary> <br>
-          <summary> <b> <code>&lt;nav&gt;</code> </b> <br>  Sección con enlaces de navegación, internos o externos. </summary> <br>
-          <summary> <b> <code>&lt;section&gt;</code> </b> <br>  Representa una sección genérica de un documento. Muy parecido al
+          <summary> <b> <code>&lt;nav&gt;</code> </b> <br> Sección con enlaces de navegación, internos o externos.
+          </summary> <br>
+          <summary> <b> <code>&lt;section&gt;</code> </b> <br> Representa una sección genérica de un documento. Muy
+            parecido al
             &lt;div&gt; pero en menor nivel </summary> <br>
       </details>
     </li>
@@ -157,28 +217,38 @@
 
         </summary> Para organizar bloques o secciones de contenido
         <ul>
-          <summary> <b> <code>&lt;dl&gt;</code> </b> <br> Es una definición esta asociado con una lista descriptiva se relaciona dd.
+          <summary> <b> <code>&lt;dl&gt;</code> </b> <br> Es una definición esta asociado con una lista descriptiva se
+            relaciona dd.
             GLOSARIO DE TERMINOS. 3 etiquetas. dt para definir el termino, dd la definición del dato </summary> <br>
-          <summary> <b> <code>&lt;dt&gt;</code> </b> <br> Término en una descripción o lista de definiciones Definición Term.
+          <summary> <b> <code>&lt;dt&gt;</code> </b> <br> Término en una descripción o lista de definiciones Definición
+            Term.
           </summary> <br>
-          <summary> <b> <code>&lt;dd&gt;</code> </b> <br> Provee detalles acerca de o la definición de un término precedente en dt
-            (tabula) Definición description </summary>  <br>
-          <summary> <b> <code>&lt;blockquote&gt;</code> </b> <br> Citas en bloque se ven como cita, combinar con cite genera todo ese
+          <summary> <b> <code>&lt;dd&gt;</code> </b> <br> Provee detalles acerca de o la definición de un término
+            precedente en dt
+            (tabula) Definición description </summary> <br>
+          <summary> <b> <code>&lt;blockquote&gt;</code> </b> <br> Citas en bloque se ven como cita, combinar con cite
+            genera todo ese
             contenido </summary> <br>
-          <summary> <b> <code>&lt;div&gt;</code> </b> <br> Secciones o contenidos, etiqueta por excelencia, genera saltos de linea.
+          <summary> <b> <code>&lt;div&gt;</code> </b> <br> Secciones o contenidos, etiqueta por excelencia, genera
+            saltos de linea.
             VER SPAN </summary> <br>
-          <summary> <b> <code>&lt;figure&gt;</code> </b> <br> Marco de una figura, incluye origen, tamaño, texto alternativo, etc.
+          <summary> <b> <code>&lt;figure&gt;</code> </b> <br> Marco de una figura, incluye origen, tamaño, texto
+            alternativo, etc.
             Para poner el caption figcaption dentro del tag </summary> <br>
           <summary> <b> <code>&lt;figcaption&gt;</code> </b> <br> Subtitulo de una figura. </summary> <br>
           <summary> <b> <code>&lt;hr&gt;</code> </b> <br> Línea horizontal salto semantico de contenido </summary> <br>
           <summary> <b> <code>&lt;li&gt;</code> </b> <br> Lista la etiqueta de cierre opcional </summary> <br>
-          <summary> <b> <code>&lt;menu&gt;</code> </b> <br> Lista desordenada de elementos con elementos li, muy parecido a ul </summary> <br>
-          <summary> <b> <code>&lt;ul&gt;</code> </b> <br> UNorderd List - Lista no ordenada, lleva puntos. con type te das tipos de
+          <summary> <b> <code>&lt;menu&gt;</code> </b> <br> Lista desordenada de elementos con elementos li, muy
+            parecido a ul </summary> <br>
+          <summary> <b> <code>&lt;ul&gt;</code> </b> <br> UNorderd List - Lista no ordenada, lleva puntos. con type te
+            das tipos de
             viñeta, scuare, circle. Title un cuadradito con el nomnbre </summary> <br>
-          <summary> <b> <code>&lt;ol&gt;</code> </b> <br> “Ordered List” - Lista Ordenada , siemrpe van dentro los tag li, start para
+          <summary> <b> <code>&lt;ol&gt;</code> </b> <br> “Ordered List” - Lista Ordenada , siemrpe van dentro los tag
+            li, start para
             poner No inicio, reversed para alrevez, con type muestra el tipo de num </summary> <br>
           <summary> <b> <code>&lt;p&gt;</code> </b> <br> Parrafo. Texto en forma de parrafo, margenes. </summary> <br>
-          <summary> <b> <code>&lt;pre&gt;</code> </b> <br> Permite escribir en linea desde el editor, cambia la letra</summary> <br>
+          <summary> <b> <code>&lt;pre&gt;</code> </b> <br> Permite escribir en linea desde el editor, cambia la letra
+          </summary> <br>
         </ul>
       </details>
     </li>
@@ -221,8 +291,9 @@
 
         </summary> significado, estructura, o el estilo de una palabra, una línea o cualquier pieza arbitraria de texto.
         <ul>
-          <summary> <b> <code>&lt;a&gt;</code> </b> <br> enlaces a otras pags href para el source para abrir en nueva pesataña < a
-              href=" bbbb"=> , con target ="_blanck", rel="nofollow" para sitios no relacionados, si dentro dejas una
+          <summary> <b> <code>&lt;a&gt;</code> </b> <br> enlaces a otras pags href para el source para abrir en nueva
+            pesataña < a href=" bbbb"=> , con target ="_blanck", rel="nofollow" para sitios no relacionados, si dentro
+              dejas una
               img te hace la img como hipervinculo. <br>
               Para hacer navegación interna, emoji 😉 o texto. tabla para asociar los items a a donde ir se debe dar
               nombre como id, no agenos al ingles ni espacios a href = "lugar#ADondeVa". <br>
@@ -233,7 +304,8 @@
           <summary> <b> <code>&lt;b&gt;</code> </b> <br> Negrita <b>NEGRITA ASÍ </b> </summary> <br>
           <summary> <b> <code>&lt;bdi&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
           <summary> <b> <code>&lt;bdo&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
-          <summary> <b> <code>&lt;br&gt;</code> </b> <br> Salto de linea. UN SOLO TAG, NO NECESITA CIERRE </summary> <br>
+          <summary> <b> <code>&lt;br&gt;</code> </b> <br> Salto de linea. UN SOLO TAG, NO NECESITA CIERRE </summary>
+          <br>
           <summary> <b> <code>&lt;cite&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
           <summary> <b> <code>&lt;code&gt;</code> </b> <br> mostrar en formato de codigo </summary> <br>
           <summary> <b> <code>&lt;data&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
@@ -249,7 +321,8 @@
           <summary> <b> <code>&lt;s&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
           <summary> <b> <code>&lt;samp&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
           <summary> <b> <code>&lt;small&gt;</code> </b> <br> Letra pequeña </summary> <br>
-          <summary> <b> <code>&lt;span&gt;</code> </b> <br> Secciones de bloque genererico en linea. Solo ocupa el espacio de su
+          <summary> <b> <code>&lt;span&gt;</code> </b> <br> Secciones de bloque genererico en linea. Solo ocupa el
+            espacio de su
             contenido VER DIV </summary> <br>
           <summary> <b> <code>&lt;strong&gt;</code> </b> <br> enfasis, entonación etiqueta semantica </summary> <br>
           <summary> <b> <code>&lt;sub&gt;</code> </b> <br> subindice </summary> <br>
@@ -276,214 +349,255 @@
 
         </summary>
         <ul>
-          <summary> <b> <code>&lt;area&gt;</code> </b> <br> ???????????????  </summary> <br>
-          <summary> <b> <code>&lt;audio&gt;</code> </b> <br> Por medio del atributo source se da la ruta pero debe tener el atributo controls para mostrarse. <br> <mark style="background-color: rgb(45, 234, 45)" > Autoplay </mark>  necesita permiso para que se reproduzca solo. <mark style="background-color: rgb(45, 234, 45)" >Loop</mark> para volver a reproducir. <mark style="background-color: rgb(45, 234, 45)" > muted </mark> silenciado,  <mark style="background-color: rgb(45, 234, 45)" >preloaded</mark> va a empezar a precargar para reproducir más rápido <br> <mark> <code>&lt;audio src="./audio.mp3" controls preload &gt; &lt;/audio &gt; preload </code>> </mark> <br> </code> <audio src=""  controls preload> </audio> </summary> <br>
-          <summary> <b><code>&lt;img&gt;</code>  </b> <br> en un solo tag < img src=" alt=texto descriptivo acepta formartos png, svg, etc. Los estilos recomendado desde CSS </u> </summary> <br>
+          <summary> <b> <code>&lt;area&gt;</code> </b> <br> ??????????????? </summary> <br>
+          <summary> <b> <code>&lt;audio&gt;</code> </b> <br> Por medio del atributo source se da la ruta pero debe tener
+            el atributo controls para mostrarse. <br> <mark style="background-color: rgb(45, 234, 45)"> Autoplay </mark>
+            necesita permiso para que se reproduzca solo. <mark style="background-color: rgb(45, 234, 45)">Loop</mark>
+            para volver a reproducir. <mark style="background-color: rgb(45, 234, 45)"> muted </mark> silenciado, <mark
+              style="background-color: rgb(45, 234, 45)">preloaded</mark> va a empezar a precargar para reproducir más
+            rápido <br> <mark> <code>&lt;audio src="./audio.mp3" controls preload &gt; &lt;/audio &gt; preload </code>>
+            </mark> <br> </code> <audio src="" controls preload> </audio> </summary> <br>
+          <summary> <b><code>&lt;img&gt;</code> </b> <br> en un solo tag < img
+              src=" alt=texto descriptivo acepta formartos png, svg, etc. Los estilos recomendado desde CSS </u> </summary> <br>
           <summary> <b> <code>&lt;map&gt;</code> </b> <br> ??????????????? </summary> <br>
           <summary> <b> <code>&lt;track&gt;</code> </b> <br> ??????????????? </summary> <br>
-          <summary> <b> <code>&lt;video&gt;</code> </b> <br> Por medio del atributo source se da la ruta pero debe tener el atributo controls para mostrarse. <br> <mark style="background-color: rgb(45, 234, 45)" > Autoplay </mark>  necesita permiso para que se reproduzca solo. <mark style="background-color: rgb(45, 234, 45)" >Loop</mark> para volver a reproducir. <mark style="background-color: rgb(45, 234, 45)" > muted </mark> silenciado,  <mark style="background-color: rgb(45, 234, 45)" >preloaded</mark> va a empezar a precargar para reproducir más rápido <br> <mark> <code>&lt;video src="./<b>video.mp4"</b> controls preload poster="./ARREGLAR POR CSS"&gt; &lt;/video &gt; </code> </mark> <br> </code> <video src=""  controls preload> </video> </summary> <br>
+          <summary> <b> <code>&lt;video&gt;</code> </b> <br> Por medio del atributo source se da la ruta pero debe tener el atributo controls para mostrarse. <br> <mark style="
+              background-color: rgb(45, 234, 45)"> Autoplay </mark> necesita permiso para que se reproduzca solo. <mark
+                style="background-color: rgb(45, 234, 45)">Loop</mark> para volver a reproducir. <mark
+                style="background-color: rgb(45, 234, 45)"> muted </mark> silenciado, <mark
+                style="background-color: rgb(45, 234, 45)">preloaded</mark> va a empezar a precargar para reproducir más
+              rápido <br> <mark>
+                <code>&lt;video src="./<b>video.mp4"</b> controls preload poster="./ARREGLAR POR CSS"&gt; &lt;/video &gt; </code>
+              </mark> <br> </code> <video src="" controls preload> </video> </summary> <br>
         </ul>
       </details>
-    </li> <hr>
-<!-- SALTO -->
+    </li>
+    <hr>
+    <!-- SALTO -->
     <li>
       <details>
         <summary>Contenido Incrustado ➡️(6)➡️ <br>
-        <mark>|</mark> <code>&lt;embed&gt;</code>
-        <mark>|</mark> <code>&lt;iframe&gt;</code>
-        <mark>|</mark> <code>&lt;object&gt;</code>
-        <mark>|</mark> <code>&lt;picture&gt;</code>
-        <mark>|</mark> <code>&lt;portal&gt;</code>
-        <mark>|</mark> <code>&lt;source&gt;</code>
-        <mark>|</mark>
-        </summary> 
-        
+          <mark>|</mark> <code>&lt;embed&gt;</code>
+          <mark>|</mark> <code>&lt;iframe&gt;</code>
+          <mark>|</mark> <code>&lt;object&gt;</code>
+          <mark>|</mark> <code>&lt;picture&gt;</code>
+          <mark>|</mark> <code>&lt;portal&gt;</code>
+          <mark>|</mark> <code>&lt;source&gt;</code>
+          <mark>|</mark>
+        </summary>
+
         <ul>
-        <br>  <summary> <b> <code>&lt;embed&gt;</code> </b> <br> plug-in </summary> <br> 
-          <summary> <b> <code>&lt;iframe&gt;</code> </b> <br> Un marco, ingresa otra pag en el navegador, youtube, pdfs, etc, no casi redes sociales <br> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63654.152374169564!2d-74.38432945000001!3d4.33870455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f04f7770f3b97%3A0x90b173ecbe09c570!2sFusagasug%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1688433929328!5m2!1ses!2sco" width=60% height=20% style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </summary> <br>  
-          <summary> <b> <code>&lt;object&gt;</code> </b> <br> Secciones o contenidos </summary> <br> 
-          <summary> <b> <code>&lt;picture&gt;</code> </b> <br> Secciones o contenidos </summary> <br> 
-          <summary> <b> <code>&lt;portal&gt;</code> </b> <br> Habilita incrustar htmls en otra pag  </summary> <br> 
-          <summary> <b> <code>&lt;source&gt;</code> </b> <br> recursos multimedia <code>&lt;picture&gt;</code>, <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code>  </summary> <br> 
+          <br>
+          <summary> <b> <code>&lt;embed&gt;</code> </b> <br> plug-in </summary> <br>
+          <summary> <b> <code>&lt;iframe&gt;</code> </b> <br> Un marco, ingresa otra pag en el navegador, youtube, pdfs,
+            etc, no casi redes sociales <br> <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63654.152374169564!2d-74.38432945000001!3d4.33870455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f04f7770f3b97%3A0x90b173ecbe09c570!2sFusagasug%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1688433929328!5m2!1ses!2sco"
+              width=60% height=20% style="border:1;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe> </summary> <br>
+          <summary> <b> <code>&lt;object&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
+          <summary> <b> <code>&lt;picture&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
+          <summary> <b> <code>&lt;portal&gt;</code> </b> <br> Habilita incrustar htmls en otra pag </summary> <br>
+          <summary> <b> <code>&lt;source&gt;</code> </b> <br> recursos multimedia <code>&lt;picture&gt;</code>,
+            <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code>
+          </summary> <br>
         </ul>
       </details>
-    </li> <hr>
-<!-- SALTO-->
+    </li>
+    <hr>
+    <!-- SALTO-->
     <li>
       <details>
-        <summary>SVG and MathML ➡️(2)➡️ <br> 
+        <summary>SVG and MathML ➡️(2)➡️ <br>
           <mark>|</mark> <code>&lt;svg&gt;</code>
           <mark>|</mark> <code>&lt;math&gt;</code>
           <mark>|</mark>
-          
-        </summary> 
+
+        </summary>
         <ul>
-          <summary> <b> <code>&lt;svg&gt;</code> </b> <br>  Secciones o contenidos </summary> <br>
-          <summary> <b> <code>&lt;math&gt;</code> </b> <br>  Secciones o contenidos </summary> 
+          <summary> <b> <code>&lt;svg&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
+          <summary> <b> <code>&lt;math&gt;</code> </b> <br> Secciones o contenidos </summary>
         </ul>
       </details>
-    </li> <hr>
-<!-- SALTO-->
+    </li>
+    <hr>
+    <!-- SALTO-->
     <li>
       <details>
         <summary>Scripting ➡️(3)➡️ <br>
-          <mark>|</mark> <code>&lt;canvas&gt;</code> 
+          <mark>|</mark> <code>&lt;canvas&gt;</code>
           <mark>|</mark> <code>&lt;noscript&gt;</code>
           <mark>|</mark> <code>&lt;script&gt;</code>
           <mark>|</mark>
 
-        </summary> 
+        </summary>
         <ul>
-          <summary> <b> <code>&lt;canvas&gt;</code> </b> <br> dibujar graficos por secuencias  </summary> <br>
-          <summary> <b> <code>&lt;noscript&gt;</code> </b> <br> Secciones o contenidos  </summary> <br>
-          <summary> <b> <code>&lt;script&gt;</code> </b> <br>  incrustar codigo ejecutable, puede ser js, se puede escribir como js en html mientras tengas la etiqueta script o por medio de enlazar html y js. apertura y cierre script src=/source  </summary>
+          <summary> <b> <code>&lt;canvas&gt;</code> </b> <br> dibujar graficos por secuencias </summary> <br>
+          <summary> <b> <code>&lt;noscript&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
+          <summary> <b> <code>&lt;script&gt;</code> </b> <br> incrustar codigo ejecutable, puede ser js, se puede
+            escribir como js en html mientras tengas la etiqueta script o por medio de enlazar html y js. apertura y
+            cierre script src=/source </summary>
         </ul>
       </details>
-    </li> <hr>
-<!-- SALTO-->
-<li>
-  <details>
-    <summary>Ediciones demarcadas ➡️(2)➡️ <br> 
+    </li>
+    <hr>
+    <!-- SALTO-->
+    <li>
+      <details>
+        <summary>Ediciones demarcadas ➡️(2)➡️ <br>
           <mark>|</mark> <code>&lt;del&gt;</code>
           <mark>|</mark> <code>&lt;ins&gt;</code>
           <mark>|</mark>
 
-    </summary> 
-    <ul>
-      <summary> </b> <code>&lt;del&gt;</code> </b> <br> Secciones o contenidos  </summary>
-      <summary> </b> <code>&lt;ins&gt;</code> </b> <br> Secciones o contenidos  </summary>
+        </summary>
+        <ul>
+          <summary> </b> <code>&lt;del&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary> </b> <code>&lt;ins&gt;</code> </b> <br> Secciones o contenidos </summary>
+        </ul>
+      </details>
+    </li>
+    <hr>
+    <!-- SALTO-->
+    <li>
+      <details>
+        <summary>Tablas ➡️(10)➡️ <br>
+          <mark>|</mark> <code>&lt;caption&gt;</code>
+          <mark>|</mark> <code>&lt;col&gt;</code>
+          <mark>|</mark> <code>&lt;colgroup&gt;</code>
+          <mark>|</mark> <code>&lt;table&gt;</code>
+          <mark>|</mark> <code>&lt;tbody&gt;</code>
+          <mark>|</mark> <code>&lt;td&gt;</code>
+          <mark>|</mark> <code>&lt;tfoot&gt;</code>
+          <mark>|</mark> <code>&lt;th&gt;</code>
+          <mark>|</mark> <code>&lt;thead&gt;</code>
+          <mark>|</mark> <code>&lt;tr&gt;</code>
+          <mark>|</mark>
+
+        </summary> datos tabulados
+        <ul>
+          <summary><b><code>&lt;caption&gt;</code> </b> <br> Se utiliza para agregar un titulo a la tabla puede estar
+            aariba o abajo segun el style se defina. </summary> <br>
+          <summary><b><code>&lt;col&gt;</code> </b> <br> Define propiedades de estilo y da la col </summary> <br>
+          <summary><b><code>&lt;colgrup&gt;</code> </b> <br> Agrupa una o mas colomnas </summary> <br>
+          <summary><b><code>&lt;table&gt;</code> </b> <br> Tag que contiene la tabla </summary> <br>
+          <summary><b><code>&lt;tbody&gt;</code> </b> <br> agrupa una tabla en su cuerpo </summary> <br>
+          <summary><b><code>&lt;td&gt;</code> </b> <br> Celdas </summary> <br>
+          <summary><b><code>&lt;tfoot&gt;</code> </b> <br> Pie de pagina de la tabla. </summary> <br>
+          <summary><b><code>&lt;th&gt;</code> </b> <br> Encabezado de la columna </summary> <br>
+          <summary><b><code>&lt;thead&gt;</code> </b> <br> Encabezados de columna o fila en la table </summary> <br>
+          <summary><b><code>&lt;tr&gt;</code> </b> <br> Fila en la table </summary> <br>
+        </ul>
+      </details>
+    </li>
+    <hr>
+    <!-- SALTO-->
+    <li>
+      <details>
+        <summary>Formularios ➡️(14)➡️ <br>
+          <mark>|</mark> <code>&lt;button&gt;</code>
+          <mark>|</mark> <code>&lt;datalist&gt;</code>
+          <mark>|</mark> <code>&lt;fielset&gt;</code>
+          <mark>|</mark> <code>&lt;form&gt;</code>
+          <mark>|</mark> <code>&lt;imput&gt;</code>
+          <mark>|</mark> <code>&lt;label&gt;</code>
+          <mark>|</mark> <code>&lt;legend&gt;</code>
+          <mark>|</mark> <code>&lt;meter&gt;</code>
+          <mark>|</mark> <code>&lt;optgroup&gt;</code>
+          <mark>|</mark> <code>&lt;option&gt;</code>
+          <mark>|</mark> <code>&lt;output&gt;</code>
+          <mark>|</mark> <code>&lt;progress&gt;</code>
+          <mark>|</mark> <code>&lt;select&gt;</code>
+          <mark>|</mark> <code>&lt;textarea&gt;</code>
+          <mark>|</mark>
+
+
+        </summary> Crear formularios, valores como autocompletar el formulario,
+        <ul>
+          <summary><b><code>&lt;button&gt;</code> </b> <br> Un boton <button> ESTE </button> </summary>
+          <summary><b><code>&lt;datalist&gt;</code> </b> <br> Contiene elementos, opciones </summary>
+          <summary><b><code>&lt;fielset&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary><b><code>&lt;form&gt;</code> </b> <br> la que contiene controles activos </summary>
+          <summary><b><code>&lt;input&gt;</code> </b> <br> Controles interactivos de formulario. < imput así: <br>
+              <samll>
+                text <input type="text"> <br>
+                checkbox <input type="checkbox"> <br>
+                radio <input type="radio"> <br>
+                date <input type="date"> <br>
+                submit <input type="submit"> <br>
+                search <input type="search"> <br>
+                reset <input type="reset"> <br>
+                file <input type="file"> <br>
+                email <input type="email"> <br>
+                color <input type="color"> <br>
+                password <input type="password"> <br>
+                range <input type="range"> <br>
+                button <input type="button" value="este"> <br>
+              </samll>
+          </summary>
+          <summary><b><code>&lt;label&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary><b><code>&lt;legend&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary><b><code>&lt;meter&gt;</code> </b> <br> escala dentro de un rango </summary>
+          <summary><b><code>&lt;optgroup&gt;</code> </b> <br> agrupación <code>&lt;select&gt;</code> </summary>
+          <summary><b><code>&lt;option&gt;</code> </b> <br> item dentro de un <code>&lt;select&gt;</code> </summary>
+          <summary><b><code>&lt;output&gt;</code> </b> <br> puede inyectar resultados de calculos </summary>
+          <summary><b><code>&lt;progress&gt;</code> </b> <br> muestra prograso de una tarea </summary>
+          <summary><b><code>&lt;select&gt;</code> </b> <br> menu de opciones las opciones estan dentro de
+            <code>&lt;option&gt;</code> que generalmente se agrupan en <code>&lt;optgroup&gt;</code>
+          </summary>
+          <summary><b><code>&lt;textarea&gt;</code> </b> <br> edución multililnea de texto sin formato </summary>
+        </ul>
+      </details>
+    </li>
+    <hr>
+    <!-- SALTO-->
+    <li>
+      <details>
+        <summary>Elementos Interactivos ➡️(3)➡️ <br>
+          <mark>|</mark> <code>&lt;details&gt;</code>
+          <mark>|</mark> <code>&lt;dialog&gt;</code>
+          <mark>|</mark> <code>&lt;summary&gt;</code>
+          <mark>|</mark>
+
+
+        </summary>
+        <ul>
+          <summary><b><code>&lt;details&gt;</code> </b> <br> Envuelve el acordeon </summary> <br>
+          <summary><b><code>&lt;dialog&gt;</code> </b> <br> Como tipo de caja de dialogo </summary> <br>
+          <summary><b><code>&lt;summary&gt;</code> </b> <br> Titulo del acordeón se agrega otro tag para el contenido
+          </summary> <br>
+        </ul>
+      </details>
+    </li>
+    <hr>
+    <!-- SALTO-->
+    <li>
+      <details>
+        <summary>Componentes WEB ➡️(2)➡️ <br>
+          <mark>|</mark> <code>&lt;slot&gt;</code>
+          <mark>|</mark> <code>&lt;template&gt;</code>
+          <mark>|</mark>
+
+        </summary> tecnología relacionada con HTML que hacen que sea posible, en esencia, crear y personalizar elementos
+        como si fueran HTML normal.
+        <ul>
+          <summary><b><code>&lt;slot&gt;</code> </b> <br> placeholder en un componente que tu puedes llenar con tu
+            propio marcado,</summary>
+    </li> <br>
+    <summary><b><code>&lt;Template&gt;</code> </b> <br> mecanismo para mantener el contenido HTML del lado del cliente
+      que no se renderiza cuando se carga una página, pero que posteriormente puede ser instanciado </summary>
+    <hr>
     </ul>
-  </details>
-</li> <hr>
-<!-- SALTO-->
-<li>
-  <details>
-    <summary>Tablas ➡️(10)➡️ <br>
-      <mark>|</mark> <code>&lt;caption&gt;</code>
-      <mark>|</mark> <code>&lt;col&gt;</code>
-      <mark>|</mark> <code>&lt;colgroup&gt;</code>
-      <mark>|</mark> <code>&lt;table&gt;</code>
-      <mark>|</mark> <code>&lt;tbody&gt;</code>
-      <mark>|</mark> <code>&lt;td&gt;</code>
-      <mark>|</mark> <code>&lt;tfoot&gt;</code>
-      <mark>|</mark> <code>&lt;th&gt;</code>
-      <mark>|</mark> <code>&lt;thead&gt;</code>
-      <mark>|</mark> <code>&lt;tr&gt;</code>
-      <mark>|</mark> 
-      
-    </summary> datos tabulados
-    <ul>
-      <summary><b><code>&lt;caption&gt;</code> </b> <br> Se utiliza para agregar un titulo a la tabla puede estar aariba o abajo segun el style se defina. </summary> <br>
-      <summary><b><code>&lt;col&gt;</code> </b> <br> Define propiedades de estilo y da la col </summary> <br>
-      <summary><b><code>&lt;colgrup&gt;</code> </b> <br> Agrupa una o mas colomnas </summary> <br>
-      <summary><b><code>&lt;table&gt;</code> </b> <br> Tag que contiene la tabla </summary> <br>
-      <summary><b><code>&lt;tbody&gt;</code> </b> <br> agrupa una tabla en su cuerpo </summary> <br>
-      <summary><b><code>&lt;td&gt;</code> </b> <br> Celdas  </summary> <br>
-      <summary><b><code>&lt;tfoot&gt;</code> </b> <br> Pie de pagina de la tabla.  </summary> <br>
-      <summary><b><code>&lt;th&gt;</code> </b> <br> Encabezado de la columna  </summary> <br>
-      <summary><b><code>&lt;thead&gt;</code> </b> <br> Encabezados de columna o fila en la table </summary> <br>
-      <summary><b><code>&lt;tr&gt;</code> </b> <br> Fila en la table </summary> <br>
-    </ul>
-  </details>
-</li> <hr>
-<!-- SALTO-->
-<li>
-  <details>
-    <summary>Formularios ➡️(14)➡️ <br>
-      <mark>|</mark> <code>&lt;button&gt;</code>
-      <mark>|</mark> <code>&lt;datalist&gt;</code>
-      <mark>|</mark> <code>&lt;fielset&gt;</code>
-      <mark>|</mark> <code>&lt;form&gt;</code>
-      <mark>|</mark> <code>&lt;imput&gt;</code>
-      <mark>|</mark> <code>&lt;label&gt;</code>
-      <mark>|</mark> <code>&lt;legend&gt;</code>
-      <mark>|</mark> <code>&lt;meter&gt;</code>
-      <mark>|</mark> <code>&lt;optgroup&gt;</code>
-      <mark>|</mark> <code>&lt;option&gt;</code>
-      <mark>|</mark> <code>&lt;output&gt;</code>
-      <mark>|</mark> <code>&lt;progress&gt;</code>
-      <mark>|</mark> <code>&lt;select&gt;</code>
-      <mark>|</mark> <code>&lt;textarea&gt;</code>
-      <mark>|</mark>
+    </details>
+    </li>
+    <hr>
 
-
-    </summary> Crear formularios, valores como autocompletar el formulario, 
-    <ul>
-      <summary><b><code>&lt;button&gt;</code> </b> <br>  Un boton <button> ESTE </button>   </summary>
-      <summary><b><code>&lt;datalist&gt;</code> </b> <br> Contiene elementos, opciones  </summary>
-      <summary><b><code>&lt;fielset&gt;</code> </b> <br> Secciones o contenidos  </summary>
-      <summary><b><code>&lt;form&gt;</code> </b> <br> la que contiene controles activos  </summary>
-      <summary><b><code>&lt;input&gt;</code> </b> <br> Controles interactivos de formulario. < imput así: <br> 
-      <samll>
-        text  <input type="text"> <br> 
-        checkbox  <input type="checkbox"> <br> 
-        radio  <input type="radio"> <br>  
-        date  <input type="date"> <br> 
-        submit  <input type="submit"> <br> 
-        search  <input type="search"> <br> 
-        reset  <input type="reset"> <br> 
-        file  <input type="file"> <br> 
-        email  <input type="email"> <br> 
-        color  <input type="color"> <br>
-        password  <input type="password"> <br>
-        range  <input type="range"> <br>
-        button  <input type="button" value ="este"> <br> 
-      </samll>
-      </summary>
-      <summary><b><code>&lt;label&gt;</code> </b> <br> Secciones o contenidos  </summary>
-      <summary><b><code>&lt;legend&gt;</code> </b> <br> Secciones o contenidos  </summary>
-      <summary><b><code>&lt;meter&gt;</code> </b> <br> escala dentro de un rango  </summary>
-      <summary><b><code>&lt;optgroup&gt;</code> </b> <br> agrupación <code>&lt;select&gt;</code> </summary>
-      <summary><b><code>&lt;option&gt;</code> </b> <br> item dentro de un <code>&lt;select&gt;</code>  </summary>
-      <summary><b><code>&lt;output&gt;</code> </b> <br> puede inyectar resultados de calculos  </summary>
-      <summary><b><code>&lt;progress&gt;</code> </b> <br> muestra prograso de una tarea  </summary>
-      <summary><b><code>&lt;select&gt;</code> </b> <br> menu de opciones las opciones estan dentro de <code>&lt;option&gt;</code> que generalmente se agrupan en <code>&lt;optgroup&gt;</code> </summary>
-      <summary><b><code>&lt;textarea&gt;</code> </b> <br> edución multililnea de texto sin formato </summary>
-    </ul>
-  </details>
-</li> <hr>
-<!-- SALTO-->
-<li>
-  <details>
-    <summary>Elementos Interactivos  ➡️(3)➡️ <br>
-      <mark>|</mark> <code>&lt;details&gt;</code>
-      <mark>|</mark> <code>&lt;dialog&gt;</code>
-      <mark>|</mark> <code>&lt;summary&gt;</code>
-      <mark>|</mark>
-
-
-    </summary> 
-    <ul>
-      <summary><b><code>&lt;details&gt;</code> </b> <br> Envuelve el acordeon </summary> <br>
-      <summary><b><code>&lt;dialog&gt;</code> </b> <br> Como tipo de caja de dialogo </summary> <br>
-      <summary><b><code>&lt;summary&gt;</code> </b> <br> Titulo del acordeón se agrega otro tag para el contenido </summary> <br>
-    </ul>
-  </details>
-</li> <hr>
-<!-- SALTO-->
-<li>
-  <details>
-    <summary>Componentes WEB ➡️(2)➡️ <br> 
-      <mark>|</mark> <code>&lt;slot&gt;</code>
-      <mark>|</mark> <code>&lt;template&gt;</code>
-      <mark>|</mark>
-
-    </summary> tecnología relacionada con HTML que hacen que sea posible, en esencia, crear y personalizar elementos como si fueran HTML normal.
-    <ul>
-      <summary><b><code>&lt;slot&gt;</code> </b> <br> placeholder en un componente que tu puedes llenar con tu propio marcado,</summary> 
-    </li> <br>  
-    <summary><b><code>&lt;Template&gt;</code> </b> <br> mecanismo para mantener el contenido HTML del lado del cliente que no se renderiza cuando se carga una página, pero que posteriormente puede ser instanciado  </summary> <hr>
-  </ul>
-</details>
-</li> <hr> 
-
-<!-- SALTO-->
-<li>
-  <details>
-    <summary>Styles CSS en HTML 3 formas </summary> XXXXXXXXXXX
-    <ul>
-      <summary> <b> dando atributos onclick="Alert" </b> <br> No muy recomdable </summary> <br>
-          <summary> <b> En head se abre etiqueta style </b> <br> LIBRERIAS se van marcando etiquetas por etiquetas pero marca
+    <!-- SALTO-->
+    <li>
+      <details>
+        <summary>Styles CSS en HTML 3 formas </summary> XXXXXXXXXXX
+        <ul>
+          <summary> <b> dando atributos onclick="Alert" </b> <br> No muy recomdable </summary> <br>
+          <summary> <b> En head se abre etiqueta style </b> <br> LIBRERIAS se van marcando etiquetas por etiquetas pero
+            marca
             todas las etiquetas </summary> <br>
           <summary> <b> Mediente hoja CSS </b> <br> Se enlaza en el head con tag link rel = "stylesheets" href="./DIR"
           </summary> <br>
@@ -539,8 +653,6 @@
 
     <!-- FIN ⛔-->
     </ul>
-
-
 
   </ol>
 
