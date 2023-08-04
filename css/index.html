@@ -5,9 +5,208 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS</title>
+  <meta name="description"
+    content="Esta es la primera página que hago en HTML sobre css y sobre la cual voy integrando todo conocimiento" />
+  <link rel="icon"
+    href="https://raw.githubusercontent.com/devpsicoamgg/elementsdevamgg-/main/favicons/1590029575811.png"
+    sizes="95x95" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
 </head>
 
 <body>
+  <h1>ALL THOSE MY FIRST STEPS 👣 IN CSS</h1>
+  <p>CSS se traduce como <i>Cascading Style Sheets</i> y se entiende como un lenguaje de definición de los documentos
+    <i>HTML</i>.
+  </p>
+
+  <article id="ways-to-insert">
+    <p>Se pueden definir 3 formas para aplicar estilos: </p>
+    <ul>
+      <li> <b> En etiqueta Style </b> Directamente utilizando la etiqueta <code>&lt;style&gt;</code> en el encabezado
+        del documento. Dentro de la etiqueta <code>&lt;style&gt;</code> se definen reglas CSS para los elementos a
+        estilizar. Útil cuando solo se necesitan estilos específicos para una página en particular </li>
+      <li> <b> Estilos Importado </b> Se definen en un archivo CSS separado y luego se importan en el documento HTML
+        utilizando la etiqueta
+        < link>. Esto es útil para mantener el código organizado y reutilizar estilos en varias páginas.
+      </li>
+      <li> <b> Estilos en Linea </b> Los estilos en línea se aplican directamente dentro del atributo<i> style </i>de un
+        elemento
+        HTML. Son útiles para estilos simples o estilos específicos que afectan solo a un elemento en particular.</li>
+    </ul>
+  </article>
+
+
+  <ol id="temario-general">
+    <h2 id="temario-css">TEMARIO DE CSS </h2>
+    <li><a href="index.html#sintaxis"> Sintaxis </a></li>
+    <li><a href="index.html#selectores"> Selectores </a></li>
+    <li><a href="index.html#selectores-avanzados">Selectores Avanzados </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+    <li><a href="index.html#"> </a></li>
+  </ol>
+  <hr>
+
+  <article id="sintaxis">
+    <h2>Sintaxis</h2>
+    <p>La sintaxis completa de CSS se compone de diversas reglas y propiedades que permiten definir cómo se verán los
+      elementos HTML en una página web. El estilo se aplica a los elementos mediante selectores que apuntan a los
+      elementos
+      específicos del HTML.</p>
+
+    <p>Por ejemplo, para cambiar el color de fondo de un elemento &lt;div&gt; a rojo, podríamos usar el siguiente código
+      CSS:</p>
+    <code>
+div {
+  background-color: red;
+}
+</code> <br>
+    <a href="index.html#temario-css">🔝</a>
+  </article>
+  <hr>
+
+  <article id="selectores">
+    <h2>Selectores Básicos</h2>
+    <p>Los selectores en CSS son patrones que permiten apuntar 🔎 a elementos específicos del HTML para aplicarles
+      estilos.
+      Algunos ejemplos de selectores son:</p>
+    <ul>
+      <li> <b>Selector de tipo:</b> Apunta a todos los elementos de un tipo específico, por ejemplo, <code>p</code>
+        selecciona
+        todos
+        los párrafos.</li>
+      <li> <b> <s> Selector de ID: </s> </b> Apunta a un elemento con un ID específico, por ejemplo, <code>#mi-id</code>
+        selecciona el elemento con el ID "mi-id".</li>
+      <li> <b> Selector de clase:</b> Apunta a elementos que tienen un atributo de clase específico, por
+        ejemplo,<code> .mi-clase</code> selecciona todos los elementos con la clase "mi-clase".</li>
+      <details>
+        <summary> EJEMPLO: </summary>
+        <p> 01.- Texto que no se modifica, no se agrega ninguna propiedad
+          <small> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laboriosam unde soluta repellat neque
+            nobis
+            ipsa optio deleniti quis magnam praesentium omnis, distinctio animi, vero nostrum ipsum veritatis
+            officia
+            sed. </small>
+        </p>
+        <p> 02.- texto a quien en el tag se agrega el <b>ID</b> "parrafo-dos"
+          <small id="parrafo-dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum est fugit deleniti
+            veritatis pariatur
+            repudiandae
+            suscipit tempore, voluptas maiores adipisci dolorem doloribus quasi delectus molestiae esse minima
+            excepturi
+            nulla
+            consequatur! </small>
+        </p>
+        <p> 03.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-9 bg-skyblue"
+          <small class="text-9 bg-skyblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui, minima
+            hic inventore non doloribus
+            assumenda
+            sapiente, iure unde nulla illo velit delectus, asperiores accusantium et! Ullam error atque modi?
+          </small>
+        </p>
+        <p> 04.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-7 bg-steelblue text-white"
+          <small class="text-7 bg-steelblue text-white"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Vero sed veniam aliquam eligendi.
+            Recusandae
+            quibusdam
+            quasi veniam numquam, sed praesentium esse, eos nobis, hic ratione illo aut quia. Ab, magni.</small>
+        </p>
+        <p> 05.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-9 bg-steelblue text-white"
+          <small class="text-9 bg-steelblue text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Vitae odit est unde dolor neque natus,
+            libero, quo
+            suscipit officia aliquid, minus quis ad deserunt tempora vel quae? Quibusdam, tempore deleniti?</small>
+        </p>
+        <a href="index.html#temario-css">☝️</a>
+      </details>
+
+
+    </ul>
+    <a href="index.html#temario-css">🔝</a>
+  </article>
+  <hr>
+
+  <article id="selectores-avanzados">
+    <h2>Selectores avanzados </h2>
+    <h3>Selector de Hijos(>)</h3>
+    <p> El selector de hijos (>) selecciona todos los elementos hijos que son descendientes directos de un elemento
+      padre específico. La sintaxis para el selector de hijos es la siguiente: <br>
+      <code>
+      padre > hijo {
+     
+      }
+  </code>
+    </p>
+    <ul class="hijos-directos">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selector de hijos descendientes</h4>
+    <p> El selector de hijos descendientes (sin un símbolo específico) selecciona todos los elementos hijos que son
+      descendientes de un elemento padre específico, independientemente del nivel de jerarquía. La sintaxis para el
+      selector de hijos descendientes es simplemente la combinación de los selectores sin ningún símbolo adicional.</p>
+    <ul class="hijos-descendientes">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h3>Selectores de hermanos</h3>
+    <h4>Selector de hermanos (en general)</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"> <b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h4>Selector de hermanos adyacente</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-adyacentes"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h3>Selectores de Atributos</h3>
+    <nav class="selectores-atributos">
+      <ul>
+        <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+        <li><a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+        <li><a href="http://jonmircha.com/blog" target="_blank">Blog</a></li>
+        <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+        <li><a class="menu item ahora button" href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+        <li><a class="menu-item notas button" href="http://jonmircha.com/notas" target="_blank">Notas</a></li>
+        <li><a href="index.html#temario-css">Regresar al Temario</a></li>
+      </ul>
+    </nav>
+    <h3>Selector Universal (*)</h3>
+    <ul class="selector-universal">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <a href="index.html#temario-css">🔝</a>
+  </article>
+  <hr>
 
 </body>
 
