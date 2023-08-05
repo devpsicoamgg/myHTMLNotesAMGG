@@ -326,13 +326,72 @@ div {
           botones de radio).</li>
       </ol>
       <form class="form-pseudoclases">
-        <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
-        <br>
         <input type="email" name="correo" placeholder="Escribe tu correo" required>
         <br>
-        <input type="submit">
-        <input type="submit" disabled>
+        .form-pseudoclases *:valid { <br>
+        border-color: green; <br>
+        } <br>
+        <br>
+        .form-pseudoclases *:invalid { <br>
+        border-color: red; <br>
+        } <br>
+        <br>
+        .form-pseudoclases *:focus { <br>
+        background-color: skyblue; <br>
+        } <br>
+        <input type="submit"> <br>
+        .form-pseudoclases *:valid { <br>
+        border-color: green; <br>
+        } <br>
+        <input type="submit" disabled> <br>
+        .form-pseudoclases *:disabled { <br>
+        background-color: pink; <br>
+        } <br>
       </form>
+      <nav class="menu-pseudoclases">
+        <p> Modifica si el enlace ha sido visitado y si se esta encima de él</p> <br>
+        <a href="#seccion1">Sección 1</a>
+        <a href="#seccion2">Sección 2</a>
+        <a href="#seccion3">Sección 3</a>
+        <a href="#seccion4">Sección 4</a>
+        <P>
+          El orden muy importante: <br>
+
+          .menu-pseudoclases a:visited { <br>
+          color: olive; <br>
+          } <br>
+          <br>
+          .menu-pseudoclases a:hover { <br>
+          color: orange; <br>
+          } <br>
+        <h4> Otro ejemplo de :hover sobre texto (todo tiene :hover) </h4>
+        <small>
+          .p-pseudoclases:hover { <br>
+          font-size: 17px; /* Cambio del tamaño de fuente a 17px */ <br>
+          color: rgb(0, 0, 0); /* Cambio del color del texto a negro */ <br>
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregamos una sombra al texto */ <br>
+          transition: font-size 0.3s ease; /* Transición suave para el cambio de tamaño de fuente */ <br>
+          background-color: rgba(255, 10, 165, 0.919); /* Cambio del color de fondo con transparencia */ <br>
+          transform: scale(1.05); /* Escalado del texto para aumentar en un 5% */ <br>
+          opacity: 0.7; /* Reducción de la opacidad del elemento al 70% */ <br>
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregamos una sombra alrededor del elemento */ <br>
+          } <br>
+        </small>
+        <p class="p-pseudoclases"> Pater noster, qui es in caelis, <br>
+          sanctificetur Nomen Tuum; <br>
+          adveniat Regnum Tuum; <br>
+          fiat voluntas Tua, <br>
+          sicut in caelo, et in terra. <br>
+          Panem nostrum cotidianum da nobis hodie; <br>
+          et dimitte nobis debita nostra, <br>
+          sicut et nos dimittimus debitoribus nostris; <br>
+          et ne nos inducas in tentationem; <br>
+          sed libera nos a Malo. <br> Amen. <br>
+        </p>
+        <br>
+        </P>
+      </nav>
+
     </details>
     <a href="index.html#temario-css">🔝</a>
   </article>
