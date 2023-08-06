@@ -2,510 +2,760 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS</title>
-  <meta name="description"
-    content="Esta es la primera página que hago en HTML sobre css y sobre la cual voy integrando todo conocimiento" />
-  <link rel="icon"
-    href="https://raw.githubusercontent.com/devpsicoamgg/elementsdevamgg-/main/favicons/1590029575811.png"
-    sizes="95x95" />
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS</title>
+	<meta name="description"
+		content="Esta es la primera página que hago en HTML sobre css y sobre la cual voy integrando todo conocimiento" />
+	<link rel="icon"
+		href="https://raw.githubusercontent.com/devpsicoamgg/elementsdevamgg-/main/favicons/1590029575811.png"
+		sizes="95x95" />
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
 
 </head>
 
 <body>
-  <h1>ALL THOSE MY FIRST STEPS 👣 IN CSS</h1>
-  <p>CSS se traduce como <i>Cascading Style Sheets</i> y se entiende como un lenguaje de definición de los documentos
-    <i>HTML</i>.
-  </p>
+	<h1>ALL THOSE MY FIRST STEPS 👣 IN CSS</h1>
+	<p>CSS se traduce como <i>Cascading Style Sheets</i> y se entiende como un lenguaje de definición de los
+		documentos
+		<i>HTML</i>.
+	</p>
 
-  <article id="ways-to-insert">
-    <p>Se pueden definir 3 formas para aplicar estilos: </p>
-    <ul>
-      <li> <b> En etiqueta Style </b> Directamente utilizando la etiqueta <code>&lt;style&gt;</code> en el encabezado
-        del documento. Dentro de la etiqueta <code>&lt;style&gt;</code> se definen reglas CSS para los elementos a
-        estilizar. Útil cuando solo se necesitan estilos específicos para una página en particular </li>
-      <li> <b> Estilos Importado </b> Se definen en un archivo CSS separado y luego se importan en el documento HTML
-        utilizando la etiqueta
-        < link>. Esto es útil para mantener el código organizado y reutilizar estilos en varias páginas.
-      </li>
-      <li> <b> Estilos en Linea </b> Los estilos en línea se aplican directamente dentro del atributo<i> style </i>de un
-        elemento
-        HTML. Son útiles para estilos simples o estilos específicos que afectan solo a un elemento en particular.</li>
-    </ul>
-  </article>
+	<article id="ways-to-insert">
+		<p>Se pueden definir 3 formas para aplicar estilos: </p>
+		<ul>
+			<li> <b> En etiqueta Style </b> Directamente utilizando la etiqueta <code>&lt;style&gt;</code> en
+				el encabezado
+				del documento. Dentro de la etiqueta <code>&lt;style&gt;</code> se definen reglas CSS para
+				los elementos a
+				estilizar. Útil cuando solo se necesitan estilos específicos para una página en particular
+			</li>
+			<li> <b> Estilos Importado </b> Se definen en un archivo CSS separado y luego se importan en el
+				documento HTML
+				utilizando la etiqueta
+				< link>. Esto es útil para mantener el código organizado y reutilizar estilos en varias
+					páginas.
+			</li>
+			<li> <b> Estilos en Linea </b> Los estilos en línea se aplican directamente dentro del atributo<i>
+					style </i>de un
+				elemento
+				HTML. Son útiles para estilos simples o estilos específicos que afectan solo a un elemento
+				en particular.</li>
+		</ul>
+	</article>
 
+	<ol id="temario-general">
+		<h2 id="temario-css">TEMARIO DE CSS </h2>
+		<li><a href="index.html#sintaxis"> Sintaxis </a></li>
+		<li><a href="index.html#agruparselectores"> Agrupación de Selectores </a></li>
+		<li><a href="index.html#algoritmo-css"> El algoritmo de CSS3</a></li>
+		<li><a href="index.html#selectores"> Selectores </a></li>
+		<li><a href="index.html#selectores-avanzados">Selectores Avanzados (hijos, hermanos, atributivos &
+				universal)</a>
+		</li>
+		<li><a href="index.html#pseudoclases"> Pseudo Clase Estado </a></li>
+		<li><a href="index.html#pseudoelementos"> Pseudo elementos </a></li>
+		<li><a href="index.html#especificidad-selectores"> Especificidad </a></li>
+	</ol>
+	<hr>
 
-  <ol id="temario-general">
-    <h2 id="temario-css">TEMARIO DE CSS </h2>
-    <li><a href="index.html#sintaxis"> Sintaxis </a></li>
-    <li><a href="index.html#selectores"> Selectores </a></li>
-    <li><a href="index.html#selectores-avanzados">Selectores Avanzados (hijos, hermanos, atributos & universal)</a></li>
-    <li><a href="index.html#pseudoclases"> Pseudo Clase Estado </a></li>
-    <li><a href="index.html#pseudoporcriterio"> Pseudo Clase por criterio </a></li>
+	<article id=" sintaxis">
+		<h2>Sintaxis</h2>
+		<p>La sintaxis completa de CSS se compone de diversas reglas y propiedades que permiten definir cómo se
+			verán
+			los
+			elementos HTML en una página web. El estilo se aplica a los elementos mediante selectores que
+			apuntan a los
+			elementos
+			específicos del HTML.</p>
 
-
-  </ol>
-  <hr>
-
-  <article id=" sintaxis">
-    <h2>Sintaxis</h2>
-    <p>La sintaxis completa de CSS se compone de diversas reglas y propiedades que permiten definir cómo se verán
-      los
-      elementos HTML en una página web. El estilo se aplica a los elementos mediante selectores que apuntan a los
-      elementos
-      específicos del HTML.</p>
-
-    <p>Por ejemplo, para cambiar el color de fondo de un elemento &lt;div&gt; a rojo, podríamos usar el siguiente
-      código
-      CSS:</p>
-    <code>
+		<p>Por ejemplo, para cambiar el color de fondo de un elemento &lt;div&gt; a rojo, podríamos usar el
+			siguiente
+			código
+			CSS:</p>
+		<code>
 div {
   background-color: red;
 }
 </code> <br>
-    <a href="index.html#temario-css">🔝</a>
-  </article>
-  <hr>
-
-  <article id="selectores">
-    <h2>Selectores Básicos</h2>
-    <p>Los selectores en CSS son patrones que permiten apuntar 🔎 a elementos específicos del HTML para aplicarles
-      estilos.
-      Algunos ejemplos de selectores son:</p>
-    <ul>
-      <li> <b>Selector de tipo:</b> Apunta a todos los elementos de un tipo específico, por ejemplo,
-        <code>p</code>
-        selecciona
-        todos
-        los párrafos.
-      </li>
-      <li> <b> <s> Selector de ID: </s> </b> Apunta a un elemento con un ID específico, por ejemplo,
-        <code>#mi-id</code>
-        selecciona el elemento con el ID "mi-id".
-      </li>
-      <li> <b> Selector de clase:</b> Apunta a elementos que tienen un atributo de clase específico, por
-        ejemplo,<code> .mi-clase</code> selecciona todos los elementos con la clase "mi-clase".</li>
-      <details>
-        <summary> EJEMPLO: </summary>
-        <p> 01.- Texto que no se modifica, no se agrega ninguna propiedad
-          <small> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laboriosam unde soluta repellat
-            neque
-            nobis
-            ipsa optio deleniti quis magnam praesentium omnis, distinctio animi, vero nostrum ipsum veritatis
-            officia
-            sed. </small>
-        </p>
-        <p> 02.- texto a quien en el tag se agrega el <b>ID</b> "parrafo-dos"
-          <small id="parrafo-dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum est fugit deleniti
-            veritatis pariatur
-            repudiandae
-            suscipit tempore, voluptas maiores adipisci dolorem doloribus quasi delectus molestiae esse minima
-            excepturi
-            nulla
-            consequatur! </small>
-        </p>
-        <p> 03.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-9 bg-skyblue"
-          <small class="text-9 bg-skyblue"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui,
-            minima
-            hic inventore non doloribus
-            assumenda
-            sapiente, iure unde nulla illo velit delectus, asperiores accusantium et! Ullam error atque modi?
-          </small>
-        </p>
-        <p> 04.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-7 bg-steelblue text-white"
-          <small class="text-7 bg-steelblue text-white"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Vero sed veniam aliquam eligendi.
-            Recusandae
-            quibusdam
-            quasi veniam numquam, sed praesentium esse, eos nobis, hic ratione illo aut quia. Ab, magni.</small>
-        </p>
-        <p> 05.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-9 bg-steelblue text-white"
-          <small class="text-9 bg-steelblue text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Vitae odit est unde dolor neque natus,
-            libero, quo
-            suscipit officia aliquid, minus quis ad deserunt tempora vel quae? Quibusdam, tempore
-            deleniti?</small>
-        </p>
-        <a href="index.html#temario-css">☝️</a>
-      </details>
+		<a href="index.html#temario-css">🔝</a>
+	</article>
+	<hr>
 
 
-    </ul>
-    <a href="index.html#temario-css">🔝</a>
-  </article>
-  <hr>
+	<article id="agruparselectores">
+		<h2> Agrupación de selectores</h2>
+		<p>
+			El agrupamiento de selectores en CSS es una técnica que nos permite aplicar el mismo conjunto de
+			estilos a múltiples selectores al mismo tiempo. En lugar de repetir los mismos estilos para
+			diferentes selectores, podemos agruparlos utilizando una coma <b>(,)</b>, y luego aplicar las
+			reglas de
+			estilo comunes para todos ellos.
+		<details>
+			<summary>
+				Ejemplo
+			</summary>
+			<form class="form-agrupar-selectores">
+				<input type="text" name="nombre" placeholder="Escribe tu nombre">
+				<input type="email" name="correo" placeholder="Escribe tu correo">
+				<textarea name="comentarios" placeholder="Escribe tus comentarios" cols="30"
+					rows="10"></textarea>
+				<input type="submit">
+			</form>
+		</details>
+		</p>
+		<a href="index.html#temario-css">🔝</a>
+	</article>
+	<hr>
 
-  <article id="selectores-avanzados">
-    <h2>Selectores avanzados (hijos, hermanos, avanzados y unievrsal )</h2>
-    <details>
-      <summary>Selector de hijos directos (>)</summary>
-      <p> El selector de hijos (>) selecciona todos los elementos hijos que son descendientes directos de un
-        elemento
-        padre específico. La sintaxis para el selector de hijos es la siguiente: <br>
-        <small>
-          .hijos-directos > li { <br>
-          background-color: thistle; <br>
-          } <br>
-        </small>
-      </p>
-      <ul class="hijos-directos">
-        <li><b>Amor</b></li>
-        <li><b>Odio</b></li>
-        <li><b>Temor</b></li>
-        <li><b>Asco</b></li>
-      </ul>
-    </details>
-    <details>
-      <summary>Selector de hijos descendientes <code> [ SPACE ] </code> </summary>
-      <p> El selector de hijos descendientes (sin un símbolo específico) selecciona todos los elementos hijos que
-        son
-        descendientes de un elemento padre específico, independientemente del nivel de jerarquía. La sintaxis para
-        el
-        selector de hijos descendientes es simplemente la combinación de los selectores sin ningún símbolo
-        adicional.
-        <br>
-        <small>
-          .hijos-descendientes b { <br>
-          background-color: thistle; <br>
-          }
-        </small>
-      </p>
-      <ul class="hijos-descendientes">
-        <li><b>Uno</b></li>
-        <li><b>Dos</b></li>
-        <li><b>Tres</b></li>
-        <li><b>Cuatro</b></li>
-      </ul>
-    </details>
-    <details>
-      <summary>Selectores de hermanos general (~)</summary>
-      <p> El selector de hermanos (~) selecciona todos los elementos hermanos que siguen a un elemento específico
-        (Esten
-        por debajo), sin
-        importar si son directos o no. <br>
-        <small> .hermanos-general ~ li { <br>
-          background-color: thistle; <br>
-          } </small> <br>
-      </p>
-      <ul>
-        <li class="hermanos-general"> <b>Verano</b></li>
-        <li><b>Primavera</b></li>
-        <li><b>Otoño</b></li>
-        <li><b>Invierno</b></li>
-      </ul>
-    </details>
-    <details>
-      <summary>Hermanos Adyacentes (+) </summary>
-      <p> El selector de hermanos adyacentes (+) selecciona el primer elemento hermano que sigue inmediatamente a
-        un
-        elemento específico. <br>
-        <small>
-          .hermanos-adyacentes + li { <br>
-          background-color: thistle; <br>
-          } <br>
-        </small>
-      </p>
-      <ul>
-        <li class="hermanos-adyacentes"><b>Verano</b></li>
-        <li><b>Primavera</b></li>
-        <li><b>Otoño</b></li>
-        <li><b>Invierno</b></li>
-      </ul>
-    </details>
-    <details>
-      <summary>Selectores de Atributos</summary>
-      <p> Los selectores de atributos seleccionan elementos que tienen ciertos atributos o valores de atributos
-        específicos. La sintaxis para el selector de atributos es la siguiente: <br>
-        <small>
+	<article id="algoritmo-css">
+		<h2>El Algoritmo CSS3</h2>
+		<p>
+			Es la forma en que el navegador aplica los estilos al documento HTML.
+			(Reglas CSS).
+		</p>
 
-          <b> En este caso aplicar estilo a todos los entaces pues todos tienen href </b> <br>
-          .selectores-atributos a[href] { <br>
-          color: orangered; <br>
-          } <br>
+		<ol>
+			<li>
+				<strong>La Cascada.</strong>
+				<details>
+					<summary>Mecanismo en que el navegador aplica los estilos. (Orden 👇🏼)
+					</summary>
+					<ol>
+						<li>El Origen del Código:
+							<ul>
+								<li>El User Agent (los estilos por defecto del navegador)
+								</li>
+								<li>Personalizaciones del usuario.</li>
+								<li>Los estilos del autor.</li>
+							</ul>
+						</li>
+						<li>La Especificidad del Selector</li>
+						<li>Orden de Aparición</li>
+						<br>
+					</ol>
+				</details>
+			</li>
+			<li><strong>La Especificidad.</strong></li>
+			<details>
+				<summary>
+					Peso que tiene un selector cuando hay conflicto de estilos. (Calculo 👇🏼)
+				</summary>
 
-          <b> En este caso aplicar estilo a todos los elementos que tengan <i> target="_blank </i> negrita </b>
-          <br>
-          .selectores-atributos a[target="_blank"] { <br>
-          font-weight: bold; <br>
-          } <br>
+				<dl>
+					<dd>
+						<table>
+							<thead>
+								<tr>
+									<th>Selector</th>
+									<th>Peso Especificidad</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Etiquetas y pseudoelementos</td>
+									<td>0,0,0,1</td>
+								</tr>
+								<tr>
+									<td>Clases, atributos y pseudoclases</td>
+									<td>0,0,1,0</td>
+								</tr>
+								<tr>
+									<td>Identificadores</td>
+									<td>0,1,0,0</td>
+								</tr>
+								<tr>
+									<td>Estilos en línea</td>
+									<td>1,0,0,0</td>
+								</tr>
+								<tr>
+									<td><code>!important</code></td>
+									<td>Rompe la especificidad</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+				<br>
+			</details>
+			<li><strong>La Herencia.</strong></li>
+			<details>
+				<summary>Capacidad de heredar</summary>
 
-          <b> En este caso el comodín del * aplica el estilo si contiene el texto en cuestión *="jonmircha" en
-            cualquier
-            parte
-            contenga la palabra
-            jonmircha letra mas grande</b>
+				La Herencia es la capacidad de un selector de obtener (heredar) los valores de sus
+				ancestros más cercanos, para aplicarla se usa el valor <code>inherit</code>. Si se quiere
+				evitarla se hace con el valor
+				<code>initial</code>.
+			</details>
+		</ol>
+	</article>
 
-          <br>
-          .selectores-atributos a[href*="jonmircha"] { <br>
-          font-size: 24px; <br>
-          } <br>
+	<a href="index.html#temario-css">🔝</a>
+	</article>
+	<hr>
 
-          <b> En este caso el comodín del ^ aplica el estilo si contiene el texto en cuestión al inicio ^="http://
-          </b>
-          <br>
-          .selectores-atributos a[href^="http://"]</br>
-          { <br>
-          text-decoration: none; <br>
-          } <br>
-          <b> En este caso el comodín del $ aplica el estilo si contiene el texto en cuestión al final $=".com
-          </b>
-          <br>
-          .selectores-atributos a[href$=".com"] { <br>
-          background-color: black; <br>
-          } <br>
-          <b> En este caso el comodín del ~ aplica el estilo si contiene el texto en cuestión en una lista
-            separada
-            por
-            espacios ~="cursos" </b>
-          <br>
-          .selectores-atributos a[class~="cursos"] { <br>
-          background-color: midnightblue; <br>
-          } <br>
-          <b> En este caso El comodín del | aplica el estilo si contiene el texto en cuestión en una lista
-            separada
-            por
-            espacios y que
-            despues del texto en cuestión venga un guión medio - </b>
-          <br>
-          .selectores-atributos a[class|="menu"] { <br>
-          font-style: italic; <br>
-          } <br>
-        </small>
-      </p>
-      <nav class="selectores-atributos">
-        <ul>
-          <li><a class="menu-item notas button" href="http://jonmircha.com/notas" target="_blank">Notas</a></li>
-          <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
-          <li><a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a>
-          </li>
-          <li><a href="http://jonmircha.com/blog" target="_blank">Blog</a></li>
-          <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
-          <li><a class="menu item ahora button" href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
-          <li><a href="index.html#temario-css">Regresar al Temario</a></li>
-        </ul>
-      </nav>
-    </details>
-    <details>
-      <summary>Selector Universal (*)</summary>
-      <ul class="selector-universal">
-        <li><b>Primavera</b></li>
-        <li><b>Verano</b></li>
-        <li><b>Otoño</b></li>
-        <li><b>Invierno</b></li>
-      </ul>
-    </details>
-    <a href="index.html#temario-css">🔝</a>
-  </article>
-  <hr>
+	<article id="selectores">
+		<h2>Selectores Básicos</h2>
+		<p>Los selectores en CSS son patrones que permiten apuntar 🔎 a elementos específicos del HTML para
+			aplicarles
+			estilos.
+			Algunos ejemplos de selectores son:</p>
+		<ul>
+			<li> <b>Selector de tipo:</b> Apunta a todos los elementos de un tipo específico, por ejemplo,
+				<code>p</code>
+				selecciona
+				todos
+				los párrafos.
+			</li>
+			<li> <b> <s> Selector de ID: </s> </b> Apunta a un elemento con un ID específico, por ejemplo,
+				<code>#mi-id</code>
+				selecciona el elemento con el ID "mi-id".
+			</li>
+			<li> <b> Selector de clase:</b> Apunta a elementos que tienen un atributo de clase específico, por
+				ejemplo,<code> .mi-clase</code> selecciona todos los elementos con la clase "mi-clase".</li>
+			<details>
+				<summary> EJEMPLO: </summary>
+				<p> 01.- Texto que no se modifica, no se agrega ninguna propiedad
+					<small> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laboriosam unde
+						soluta repellat
+						neque
+						nobis
+						ipsa optio deleniti quis magnam praesentium omnis, distinctio animi, vero
+						nostrum ipsum veritatis
+						officia
+						sed. </small>
+				</p>
+				<p> 02.- texto a quien en el tag se agrega el <b>ID</b> "parrafo-dos"
+					<small id="parrafo-dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+						est fugit deleniti
+						veritatis pariatur
+						repudiandae
+						suscipit tempore, voluptas maiores adipisci dolorem doloribus quasi delectus
+						molestiae esse minima
+						excepturi
+						nulla
+						consequatur! </small>
+				</p>
+				<p> 03.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-9 bg-skyblue"
+					<small class="text-9 bg-skyblue"> Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Ea qui,
+						minima
+						hic inventore non doloribus
+						assumenda
+						sapiente, iure unde nulla illo velit delectus, asperiores accusantium et!
+						Ullam error atque modi?
+					</small>
+				</p>
+				<p> 04.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-7 bg-steelblue text-white"
+					<small class="text-7 bg-steelblue text-white"> Lorem, ipsum dolor sit amet
+						consectetur adipisicing elit.
+						Vero sed veniam aliquam eligendi.
+						Recusandae
+						quibusdam
+						quasi veniam numquam, sed praesentium esse, eos nobis, hic ratione illo aut
+						quia. Ab, magni.</small>
+				</p>
+				<p> 05.- Texto a quien en el tag se agrega la <b>CLASE</b> "text-9 bg-steelblue text-white"
+					<small class="text-9 bg-steelblue text-white">Lorem ipsum dolor sit, amet consectetur
+						adipisicing elit.
+						Vitae odit est unde dolor neque natus,
+						libero, quo
+						suscipit officia aliquid, minus quis ad deserunt tempora vel quae? Quibusdam,
+						tempore
+						deleniti?</small>
+				</p>
+			</details>
+		</ul>
+		<a href="index.html#temario-css">🔝</a>
+	</article>
+	<hr>
 
-  <article id="pseudoclases">
-    <h2>Pseudoclase de estado</h2>
-    <p> Selecciones especiales que permiten aplicar estilos y transiciones a elementos HTML en función de su estado o
-      interacción
-      con
-      el usuario. Estos estados pueden cambiar cuando un usuario interactúa con un elemento, como al hacer clic en un
-      enlace, pasar el mouse sobre un elemento o enfocar un campo de entrada. <br> Las pseudo-clases de estado se
-      representan con un colon (:) seguido del nombre del estado. Algunos ejemplos comunes de pseudo-clases de estado
-      son: <br>
-    <details>
-      <summary> Pseudoclases Interactivas </summary>
-      </p>
-      <ol>
-        <li><b>:hover</b>Aplica estilos cuando el mouse está sobre el elemento.</li>
-        <li><b>:active</b> Aplica estilos cuando el elemento está siendo activado (generalmente al hacer clic sobre él).
-        </li>
-        <li><b>:focus</b>Aplica estilos cuando el elemento tiene el foco de atención (por ejemplo, cuando se selecciona
-          un campo de entrada).</li>
-        <li><b>:visited</b>Aplica estilos a los enlaces visitados por el usuario.</li>
-        <li><b>:checked</b>Aplica estilos a elementos de entrada seleccionados (por ejemplo, casillas de verificación o
-          botones de radio).</li>
-      </ol>
-      <form class="form-pseudoclases">
-        <input type="email" name="correo" placeholder="Escribe tu correo" required>
-        <br>
-        .form-pseudoclases *:valid { <br>
-        border-color: green; <br>
-        } <br>
-        <br>
-        .form-pseudoclases *:invalid { <br>
-        border-color: red; <br>
-        } <br>
-        <br>
-        .form-pseudoclases *:focus { <br>
-        background-color: skyblue; <br>
-        } <br>
-        <input type="submit"> <br>
-        .form-pseudoclases *:valid { <br>
-        border-color: green; <br>
-        } <br>
-        <input type="submit" disabled> <br>
-        .form-pseudoclases *:disabled { <br>
-        background-color: pink; <br>
-        } <br>
-      </form>
-      <nav class="menu-pseudoclases">
-        <p> Modifica si el enlace ha sido visitado y si se esta encima de él</p> <br>
-        <a href="#seccion1">Sección 1</a>
-        <a href="#seccion2">Sección 2</a>
-        <a href="#seccion3">Sección 3</a>
-        <a href="#seccion4">Sección 4</a>
-        <P>
-          El orden muy importante: <br>
-          .menu-pseudoclases a:visited { <br>
-          color: olive; <br>
-          } <br>
-          <br>
-          .menu-pseudoclases a:hover { <br>
-          color: orange; <br>
-          } <br>
-        <h4> Otro ejemplo de :hover sobre texto (todo tiene :hover) </h4>
-        <small>
-          .p-pseudoclases:hover { <br>
-          font-size: 17px; /* Cambio del tamaño de fuente a 17px */ <br>
-          color: rgb(0, 0, 0); /* Cambio del color del texto a negro */ <br>
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregamos una sombra al texto */ <br>
-          transition: font-size 0.3s ease; /* Transición suave para el cambio de tamaño de fuente */ <br>
-          background-color: rgba(255, 10, 165, 0.919); /* Cambio del color de fondo con transparencia */ <br>
-          transform: scale(1.05); /* Escalado del texto para aumentar en un 5% */ <br>
-          opacity: 0.7; /* Reducción de la opacidad del elemento al 70% */ <br>
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregamos una sombra alrededor del elemento */ <br>
-          } <br>
-        </small>
-        <p class="p-pseudoclases"> Pater noster, qui es in caelis, <br>
-          sanctificetur Nomen Tuum; <br>
-          adveniat Regnum Tuum; <br>
-          fiat voluntas Tua, <br>
-          sicut in caelo, et in terra. <br>
-          Panem nostrum cotidianum da nobis hodie; <br>
-          et dimitte nobis debita nostra, <br>
-          sicut et nos dimittimus debitoribus nostris; <br>
-          et ne nos inducas in tentationem; <br>
-          sed libera nos a Malo. <br> Amen. <br>
-        </p>
-        <br>
-        </P>
-      </nav>
-    </details>
-  </article>
+	<article id="selectores-avanzados">
+		<h2>Selectores avanzados (hijos, hermanos, avanzados y unievrsal )</h2>
+		<details>
+			<summary>Selector de hijos directos (>)</summary>
+			<p> El selector de hijos (>) selecciona todos los elementos hijos que son descendientes directos de
+				un
+				elemento
+				padre específico. La sintaxis para el selector de hijos es la siguiente: <br>
+				<small>
+					.hijos-directos > li { <br>
+					background-color: thistle; <br>
+					} <br>
+				</small>
+			</p>
+			<ul class="hijos-directos">
+				<li><b>Amor</b></li>
+				<li><b>Odio</b></li>
+				<li><b>Temor</b></li>
+				<li><b>Asco</b></li>
+			</ul>
+		</details>
+		<details>
+			<summary>Selector de hijos descendientes <code> [ SPACE ] </code> </summary>
+			<p> El selector de hijos descendientes (sin un símbolo específico) selecciona todos los elementos
+				hijos que
+				son
+				descendientes de un elemento padre específico, independientemente del nivel de jerarquía. La
+				sintaxis para
+				el
+				selector de hijos descendientes es simplemente la combinación de los selectores sin ningún
+				símbolo
+				adicional.
+				<br>
+				<small>
+					.hijos-descendientes b { <br>
+					background-color: thistle; <br>
+					}
+				</small>
+			</p>
+			<ul class="hijos-descendientes">
+				<li><b>Uno</b></li>
+				<li><b>Dos</b></li>
+				<li><b>Tres</b></li>
+				<li><b>Cuatro</b></li>
+			</ul>
+		</details>
+		<details>
+			<summary>Selectores de hermanos general (~)</summary>
+			<p> El selector de hermanos (~) selecciona todos los elementos hermanos que siguen a un elemento
+				específico
+				(Esten
+				por debajo), sin
+				importar si son directos o no. <br>
+				<small> .hermanos-general ~ li { <br>
+					background-color: thistle; <br>
+					} </small> <br>
+			</p>
+			<ul>
+				<li class="hermanos-general"> <b>Verano</b></li>
+				<li><b>Primavera</b></li>
+				<li><b>Otoño</b></li>
+				<li><b>Invierno</b></li>
+			</ul>
+		</details>
+		<details>
+			<summary>Hermanos Adyacentes (+) </summary>
+			<p> El selector de hermanos adyacentes (+) selecciona el primer elemento hermano que sigue
+				inmediatamente a
+				un
+				elemento específico. <br>
+				<small>
+					.hermanos-adyacentes + li { <br>
+					background-color: thistle; <br>
+					} <br>
+				</small>
+			</p>
+			<ul>
+				<li class="hermanos-adyacentes"><b>Verano</b></li>
+				<li><b>Primavera</b></li>
+				<li><b>Otoño</b></li>
+				<li><b>Invierno</b></li>
+			</ul>
+		</details>
+		<details>
+			<summary>Selectores de Atributos</summary>
+			<p> Los selectores de atributos seleccionan elementos que tienen ciertos atributos o valores de
+				atributos
+				específicos. La sintaxis para el selector de atributos es la siguiente: <br>
+				<small>
 
-  <article id="pseudoporcriterio">
-    <details>
-      <summary> Posición del elemento respecto del lugar en el cual está</summary>
-      <small>
-        <ol>
-          <li>
-            <strong>.lista-pseudoclases li:first-child:</strong> <i><b>(Mú de Aries)</b></i> Esta regla se aplicará al
-            primer elemento
-            li que sea hijo de su padre con la clase "lista-pseudoclases". El color del texto se establecerá en verde.
-          </li>
-          <li>
-            <strong>.lista-pseudoclases li:last-child:</strong> <i><b>(Afordita de Piscis)</b></i> Esta regla se
-            aplicará al último
-            elemento li que sea hijo de su padre con la clase "lista-pseudoclases". El color del texto se establecerá en
-            violeta.
-          </li>
-          <li>
-            <strong>.lista-pseudoclases li:nth-child(3):</strong> <i><b>(Saga & Kanon de Géminis)</b></i> Esta regla se
-            aplicará al
-            tercer elemento li que sea hijo de su padre con la clase "lista-pseudoclases". El color del texto se
-            establecerá en azul marino (navy).
-          </li>
-          <li>
-            <strong>.lista-pseudoclases li:nth-child(4n):</strong> <i><b>(Milo de Escorpión)</b></i> Esta regla se
-            aplicará a cada
-            cuarto elemento li que sea hijo de su padre con la clase "lista-pseudoclases". El tamaño de fuente se
-            establecerá en 20px.
-          </li>
-          <li>
-            <strong>.lista-pseudoclases li:nth-child(3n + 1):</strong> <i><b>(Mú de Aries, Death Mask de Cáncer, Aioria
-                de
-                Leo, Dohko de Libra, Camus de Acuario)</b></i> Esta regla se aplicará a cada tercer elemento li que sea
-            hijo de su
-            padre con la clase "lista-pseudoclases", comenzando desde el primer elemento. El texto se mostrará en
-            negrita (font-weight: bold).
-          </li>
-          <li>
-            <strong>.lista-pseudoclases li:nth-child(even):</strong> <i> <b> (Aldebarán de Tauro, Death Mask de Cáncer,
-                Shaka de
-                Virgo, Milo de Escorpión, Shura de Capricornio)</b></i> Esta regla se aplicará a cada elemento li que
-            sea hijo de su
-            padre con la clase "lista-pseudoclases" y tenga un índice par. El fondo se establecerá en amarillo.
-          </li>
-          <li>
-            <strong>.lista-pseudoclases li:nth-child(odd):</strong> <i><b>(Mú de Aries, Saga & Kanon de Géminis, Aioria
-                de
-                Leo, Dohko de Libra, Aioros de Sagitario, Camus de Acuario)</b></i> Esta regla se aplicará a cada
-            elemento li que
-            sea hijo de su padre con la clase "lista-pseudoclases" y tenga un índice impar. El fondo se establecerá en
-            naranja.
-          </li>
-        </ol>
-      </small>
-      <ul class="lista-pseudoclases">
-        <li>Mú de Aries</li>
-        <li>Aldebarán de Tauro</li>
-        <li>Saga & Kanon de Géminis</li>
-        <li>Death Mask de Cáncer</li>
-        <li>Aioria de Leo</li>
-        <li>Shaka de Virgo</li>
-        <li>Dohko de Libra</li>
-        <li>Milo de Escorpión</li>
-        <li>Aioros de Sagitario</li>
-        <li>Shura de Capricornio</li>
-        <li>Camus de Acuario</li>
-        <li>Afordita de Piscis</li>
-      </ul>
-      <hr>
-      <small>
-        <ol>
-          <li>
-            <strong>.articulo-pseudoclases p:first-of-type:</strong> Esta regla se aplicará al primer párrafo "p" que
-            sea hijo de su padre con la clase "articulo-pseudoclases". El fondo se establecerá en rosa.
-          </li>
-          <li>
-            <strong>.articulo-pseudoclases p:last-of-type:</strong> Esta regla se aplicará al último párrafo "p" que sea
-            hijo de su padre con la clase "articulo-pseudoclases". El fondo se establecerá en violeta.
-          </li>
-          <li>
-            <strong>.articulo-pseudoclases p:nth-of-type(3):</strong> Esta regla se aplicará al tercer párrafo "p" que
-            sea hijo de su padre con la clase "articulo-pseudoclases". El fondo se establecerá en fucsia.
-          </li>
-          <li>
-            <strong>.articulo-pseudoclases *:not(p):</strong> Esta regla se aplicará a cualquier elemento que sea hijo
-            de su padre con la clase "articulo-pseudoclases", excepto los párrafos "p". El fondo se establecerá en
-            beige.
-          </li>
+					<b> En este caso aplicar estilo a todos los entaces pues todos tienen href </b> <br>
+					.selectores-atributos a[href] { <br>
+					color: orangered; <br>
+					} <br>
 
-        </ol>
-      </small>
-      <article class="articulo-pseudoclases">
-        <header>Esto es una header</header>
-        <p>Esto es un p</p>
-        <div>Esto es una div</div>
-        <p>Esto es un p</p>
-        <section>Esto es una section</section>
-        <p>Esto es un p</p>
-        <div>Esto es un div</div>
-        <p>Esto es un p</p>
-        <footer>Esto es un footer</footer>
-      </article>
-      <a href="index.html#temario-css">☝️</a>
-  </article>
+					<b> En este caso aplicar estilo a todos los elementos que tengan <i> target="_blank
+						</i> negrita </b>
+					<br>
+					.selectores-atributos a[target="_blank"] { <br>
+					font-weight: bold; <br>
+					} <br>
 
-  </details>
-  </article>
+					<b> En este caso el comodín del * aplica el estilo si contiene el texto en cuestión
+						*="jonmircha" en
+						cualquier
+						parte
+						contenga la palabra
+						jonmircha letra mas grande</b>
+
+					<br>
+					.selectores-atributos a[href*="jonmircha"] { <br>
+					font-size: 24px; <br>
+					} <br>
+
+					<b> En este caso el comodín del ^ aplica el estilo si contiene el texto en cuestión
+						al inicio ^="http://
+					</b>
+					<br>
+					.selectores-atributos a[href^="http://"]</br>
+					{ <br>
+					text-decoration: none; <br>
+					} <br>
+					<b> En este caso el comodín del $ aplica el estilo si contiene el texto en cuestión
+						al final $=".com
+					</b>
+					<br>
+					.selectores-atributos a[href$=".com"] { <br>
+					background-color: black; <br>
+					} <br>
+					<b> En este caso el comodín del ~ aplica el estilo si contiene el texto en cuestión
+						en una lista
+						separada
+						por
+						espacios ~="cursos" </b>
+					<br>
+					.selectores-atributos a[class~="cursos"] { <br>
+					background-color: midnightblue; <br>
+					} <br>
+					<b> En este caso El comodín del | aplica el estilo si contiene el texto en cuestión
+						en una lista
+						separada
+						por
+						espacios y que
+						despues del texto en cuestión venga un guión medio - </b>
+					<br>
+					.selectores-atributos a[class|="menu"] { <br>
+					font-style: italic; <br>
+					} <br>
+				</small>
+			</p>
+			<nav class="selectores-atributos">
+				<ul>
+					<li><a class="menu-item notas button" href="http://jonmircha.com/notas"
+							target="_blank">Notas</a></li>
+					<li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+					<li><a class="menu-item cursos button" href="https://jonmircha.com/cursos"
+							target="_blank">Cursos</a>
+					</li>
+					<li><a href="http://jonmircha.com/blog" target="_blank">Blog</a></li>
+					<li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+					<li><a class="menu item ahora button" href="https://jonmircha.com/ahora"
+							target="_blank">Ahora</a></li>
+					<li><a href="index.html#temario-css">Regresar al Temario</a></li>
+				</ul>
+			</nav>
+		</details>
+		<details>
+			<summary>Selector Universal (*)</summary>
+			<ul class="selector-universal">
+				<li><b>Primavera</b></li>
+				<li><b>Verano</b></li>
+				<li><b>Otoño</b></li>
+				<li><b>Invierno</b></li>
+			</ul>
+		</details>
+		<a href="index.html#temario-css">🔝</a>
+	</article>
+	<hr>
+
+	<article id="pseudoclases">
+		<h2>Pseudoclase de estado</h2>
+		<p> Selecciones especiales que permiten aplicar estilos y transiciones a elementos HTML en función de su
+			estado o
+			interacción
+			con
+			el usuario. Estos estados pueden cambiar cuando un usuario interactúa con un elemento, como al
+			hacer clic en un
+			enlace, pasar el mouse sobre un elemento o enfocar un campo de entrada. <br> Las pseudo-clases de
+			estado se
+			representan con un colon (:) seguido del nombre del estado. Algunos ejemplos comunes de
+			pseudo-clases de estado
+			son: <br>
+		<details>
+			<summary> Pseudoclases Interactivas </summary>
+			</p>
+			<ol>
+				<li><b>:hover</b>Aplica estilos cuando el mouse está sobre el elemento.</li>
+				<li><b>:active</b> Aplica estilos cuando el elemento está siendo activado (generalmente al
+					hacer clic sobre él).
+				</li>
+				<li><b>:focus</b>Aplica estilos cuando el elemento tiene el foco de atención (por ejemplo,
+					cuando se selecciona
+					un campo de entrada).</li>
+				<li><b>:visited</b>Aplica estilos a los enlaces visitados por el usuario.</li>
+				<li><b>:checked</b>Aplica estilos a elementos de entrada seleccionados (por ejemplo,
+					casillas de verificación o
+					botones de radio).</li>
+			</ol>
+			<form class="form-pseudoclases">
+				<input type="email" name="correo" placeholder="Escribe tu correo" required>
+				<br>
+				.form-pseudoclases *:valid { <br>
+				border-color: green; <br>
+				} <br>
+				<br>
+				.form-pseudoclases *:invalid { <br>
+				border-color: red; <br>
+				} <br>
+				<br>
+				.form-pseudoclases *:focus { <br>
+				background-color: skyblue; <br>
+				} <br>
+				<input type="submit"> <br>
+				.form-pseudoclases *:valid { <br>
+				border-color: green; <br>
+				} <br>
+				<input type="submit" disabled> <br>
+				.form-pseudoclases *:disabled { <br>
+				background-color: pink; <br>
+				} <br>
+			</form>
+			<nav class="menu-pseudoclases">
+				<p> Modifica si el enlace ha sido visitado y si se esta encima de él</p> <br>
+				<a href="#seccion1">Sección 1</a>
+				<a href="#seccion2">Sección 2</a>
+				<a href="#seccion3">Sección 3</a>
+				<a href="#seccion4">Sección 4</a>
+				<P>
+					El orden muy importante: <br>
+					.menu-pseudoclases a:visited { <br>
+					color: olive; <br>
+					} <br>
+					<br>
+					.menu-pseudoclases a:hover { <br>
+					color: orange; <br>
+					} <br>
+				<h4> Otro ejemplo de :hover sobre texto (todo tiene :hover) </h4>
+				<small>
+					.p-pseudoclases:hover { <br>
+					font-size: 17px; /* Cambio del tamaño de fuente a 17px */ <br>
+					color: rgb(0, 0, 0); /* Cambio del color del texto a negro */ <br>
+					text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregamos una sombra al texto */ <br>
+					transition: font-size 0.3s ease; /* Transición suave para el cambio de tamaño de
+					fuente */ <br>
+					background-color: rgba(255, 10, 165, 0.919); /* Cambio del color de fondo con
+					transparencia */ <br>
+					transform: scale(1.05); /* Escalado del texto para aumentar en un 5% */ <br>
+					opacity: 0.7; /* Reducción de la opacidad del elemento al 70% */ <br>
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregamos una sombra alrededor del
+					elemento */ <br>
+					} <br>
+				</small>
+				<p class="p-pseudoclases"> Pater noster, qui es in caelis, <br>
+					sanctificetur Nomen Tuum; <br>
+					adveniat Regnum Tuum; <br>
+					fiat voluntas Tua, <br>
+					sicut in caelo, et in terra. <br>
+					Panem nostrum cotidianum da nobis hodie; <br>
+					et dimitte nobis debita nostra, <br>
+					sicut et nos dimittimus debitoribus nostris; <br>
+					et ne nos inducas in tentationem; <br>
+					sed libera nos a Malo. <br> Amen. <br>
+				</p>
+				<br>
+				</P>
+			</nav>
+		</details>
+
+		<article id="pseudoporcriterio">
+			<details>
+				<summary> Posición del elemento respecto del lugar en el cual está</summary>
+				<small>
+					<ol>
+						<li>
+							<strong>.lista-pseudoclases li:first-child:</strong> <i><b>(Mú de
+									Aries)</b></i> Esta regla se aplicará al
+							primer elemento
+							li que sea hijo de su padre con la clase "lista-pseudoclases". El color
+							del texto se establecerá en verde.
+						</li>
+						<li>
+							<strong>.lista-pseudoclases li:last-child:</strong> <i><b>(Afordita de
+									Piscis)</b></i> Esta regla se
+							aplicará al último
+							elemento li que sea hijo de su padre con la clase "lista-pseudoclases".
+							El color del texto se establecerá
+							en
+							violeta.
+						</li>
+						<li>
+							<strong>.lista-pseudoclases li:nth-child(3):</strong> <i><b>(Saga &
+									Kanon de Géminis)</b></i> Esta regla
+							se
+							aplicará al
+							tercer elemento li que sea hijo de su padre con la clase
+							"lista-pseudoclases". El color del texto se
+							establecerá en azul marino (navy).
+						</li>
+						<li>
+							<strong>.lista-pseudoclases li:nth-child(4n):</strong> <i><b>(Milo de
+									Escorpión)</b></i> Esta regla se
+							aplicará a cada
+							cuarto elemento li que sea hijo de su padre con la clase
+							"lista-pseudoclases". El tamaño de fuente se
+							establecerá en 20px.
+						</li>
+						<li>
+							<strong>.lista-pseudoclases li:nth-child(3n + 1):</strong> <i><b>(Mú de
+									Aries, Death Mask de Cáncer,
+									Aioria
+									de
+									Leo, Dohko de Libra, Camus de Acuario)</b></i> Esta regla
+							se aplicará a cada tercer elemento li que
+							sea
+							hijo de su
+							padre con la clase "lista-pseudoclases", comenzando desde el primer
+							elemento. El texto se mostrará en
+							negrita (font-weight: bold).
+						</li>
+						<li>
+							<strong>.lista-pseudoclases li:nth-child(even):</strong> <i> <b>
+									(Aldebarán de Tauro, Death Mask de
+									Cáncer,
+									Shaka de
+									Virgo, Milo de Escorpión, Shura de Capricornio)</b></i>
+							Esta regla se aplicará a cada elemento li que
+							sea hijo de su
+							padre con la clase "lista-pseudoclases" y tenga un índice par. El fondo
+							se establecerá en amarillo.
+						</li>
+						<li>
+							<strong>.lista-pseudoclases li:nth-child(odd):</strong> <i><b>(Mú de
+									Aries, Saga & Kanon de Géminis,
+									Aioria
+									de
+									Leo, Dohko de Libra, Aioros de Sagitario, Camus de
+									Acuario)</b></i> Esta regla se aplicará a cada
+							elemento li que
+							sea hijo de su padre con la clase "lista-pseudoclases" y tenga un
+							índice impar. El fondo se establecerá en
+							naranja.
+						</li>
+					</ol>
+				</small>
+				<ul class="lista-pseudoclases">
+					<li>Mú de Aries</li>
+					<li>Aldebarán de Tauro</li>
+					<li>Saga & Kanon de Géminis</li>
+					<li>Death Mask de Cáncer</li>
+					<li>Aioria de Leo</li>
+					<li>Shaka de Virgo</li>
+					<li>Dohko de Libra</li>
+					<li>Milo de Escorpión</li>
+					<li>Aioros de Sagitario</li>
+					<li>Shura de Capricornio</li>
+					<li>Camus de Acuario</li>
+					<li>Afordita de Piscis</li>
+				</ul>
+				<hr>
+				<small>
+					<ol>
+						<li>
+							<strong>.articulo-pseudoclases p:first-of-type:</strong> Esta regla se
+							aplicará al primer párrafo "p" que
+							sea hijo de su padre con la clase "articulo-pseudoclases". El fondo se
+							establecerá en rosa.
+						</li>
+						<li>
+							<strong>.articulo-pseudoclases p:last-of-type:</strong> Esta regla se
+							aplicará al último párrafo "p" que
+							sea
+							hijo de su padre con la clase "articulo-pseudoclases". El fondo se
+							establecerá en violeta.
+						</li>
+						<li>
+							<strong>.articulo-pseudoclases p:nth-of-type(3):</strong> Esta regla se
+							aplicará al tercer párrafo "p" que
+							sea hijo de su padre con la clase "articulo-pseudoclases". El fondo se
+							establecerá en fucsia.
+						</li>
+						<li>
+							<strong>.articulo-pseudoclases *:not(p):</strong> Esta regla se
+							aplicará a cualquier elemento que sea hijo
+							de su padre con la clase "articulo-pseudoclases", excepto los párrafos
+							"p". El fondo se establecerá en
+							beige.
+						</li>
+
+					</ol>
+				</small>
+				<article class="articulo-pseudoclases">
+					<header>Esto es una header</header>
+					<p>Esto es un p</p>
+					<div>Esto es una div</div>
+					<p>Esto es un p</p>
+					<section>Esto es una section</section>
+					<p>Esto es un p</p>
+					<div>Esto es un div</div>
+					<p>Esto es un p</p>
+					<footer>Esto es un footer</footer>
+				</article>
+				<a href="index.html#temario-css">☝️</a>
+		</article>
+
+	</article>
+	<a href="index.html#temario-css">🔝</a>
+	<hr>
+
+	<article id="pseudoelementos">
+		<h2>Pseudoelementos</h2>
+		<p> Permite seleccionar y estilizar partes específicas de un elemento HTML. A diferencia de los selectores
+			de
+			clases o identificadores, que seleccionan elementos completos, los pseudoelementos seleccionan y
+			aplican estilos
+			a partes o elementos internos de un elemento. <br>
+			Los pseudoelementos se representan utilizando dos puntos (::) seguidos del nombre del
+			pseudoelemento.
+			Anteriormente, se usaba un solo colon (:), pero la especificación actual de CSS3 recomienda el uso
+			de dos puntos
+			para diferenciarlos de los pseudoclases. Algunos ejemplos de pseudoelementos comunes son:
+			ChatGPT
+		<ol>
+			<li><b>::before:</b> Pseudoelemento que inserta contenido antes del contenido real del elemento
+				seleccionado. Se utiliza para agregar contenido decorativo o visual antes del contenido del
+				elemento.</li>
+			<li><b>::after:</b> Pseudoelemento que inserta contenido después del contenido real del elemento
+				seleccionado. Similar a <b> <i>::before </i></b>, se utiliza para agregar contenido
+				decorativo o visual
+				después del contenido del elemento.</li>
+			<li><b>::first-line:</b> Pseudoelemento que selecciona la primera línea de texto dentro del
+				elemento seleccionado. Permite aplicar estilos específicos a esa línea.</li>
+			<li><b>::first-letter:</b> Pseudoelemento que selecciona la primera letra del contenido del
+				elemento seleccionado. Se utiliza para aplicar estilos especiales a la primera letra, como
+				letras capitales más grandes o colores diferentes.</li>
+			<li><b>::selection:</b> Pseudoelemento que selecciona el texto seleccionado dentro del elemento.
+				Permite aplicar estilos personalizados al texto seleccionado por el usuario.</li>
+		</ol>
+		</p>
+		<details>
+			<summary>Ejemplos</summary>
+			<p>
+				<i>Bandai Myth Cloth Ex</i> <span class="saga-geminis">Saga de Géminis</span> <span
+					class="saga-precio">500</span>
+			</p>
+			<p class="p-pseudoelementos">
+				Ave Maria, gratia plena,<br>
+				Dominus tecum.<br>
+				Benedicta tu in mulieribus,<br>
+				et benedictus fructus ventris tui, Iesus. <br>
+				Sancta Maria, Mater Dei,<br>
+				ora pro nobis peccatoribus,<br>
+				nunc et in hora mortis nostrae. Amen.
+			</p>
+			<input class="input-pseudoelementos" type="text" name="nombre" placeholder="Escribe tu nombre">
+			<br>
+		</details>
+	</article>
+	<a href="index.html#temario-css">🔝</a>
+	<hr>
+
+
+	<article id="especificidad-selectores">
+		<h2> Especificidad</h2>
+		<a href="index.html#temario-css">🔝</a>
+	</article>
 
 
 
+	<hr>
+	<a href="index.html#temario-css">🔝</a>
 
-  <a href="index.html#temario-css">🔝</a>
 
 
 
