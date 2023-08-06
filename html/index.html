@@ -70,14 +70,18 @@
 
 <body style="font-family: sans-serif;">
   <h1>ALL THOSE MY FIRST STEPS 👣 IN HTML</h1>
+  <input type="search" id="busqueda" placeholder="Buscar...">
+  <div id="resultadosBusqueda"></div>
+
   <h2>HTML</h2>
   <p>
     HTML significa Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language.
     Está constituido por tags o etiquetas que son las que muestran todo el contenido, es como el esqueleto.
     <br>
+  <details>
+    <summary> TABLA PERIODICA DE LOS ELEMENTOS HTML </summary>
     <img src="./img/tableHtml.png" width=80% />
-    <br>
-    Segun MDN los tags se agrupan en subgrupos:
+  </details>
   </p>
   <ol>
     <li>
@@ -632,18 +636,55 @@
       <p> <code>&lt;html lang="es"&gt;</code> </p>
       <button onclick="closeDialog()"> CERRAR ⛔</button>
     </dialog>
-    <script>
+    <nonscript>
       function openDialog() {
-        var dialog = document.getElementById("myDialog");
-        dialog.showModal();
+      var dialog = document.getElementById("myDialog");
+      dialog.showModal();
       }
       function closeDialog() {
-        var dialog = document.getElementById("myDialog");
-        dialog.close();
+      var dialog = document.getElementById("myDialog");
+      dialog.close();
       }
+    </nonscript>
+
+
+    <script>
+      // Función para realizar la búsqueda y mostrar los resultados
+      function buscar() {
+        const busqueda = document.getElementById("busqueda").value.toLowerCase();
+        const elementos = document.body.getElementsByTagName("*"); // Selecciona todos los elementos dentro del body
+
+        const resultados = [];
+
+        for (let i = 0; i < elementos.length; i++) {
+          if (elementos[i].innerText.toLowerCase().includes(busqueda)) {
+            resultados.push(elementos[i].cloneNode(true));
+          }
+        }
+
+        mostrarResultados(resultados);
+      }
+
+
+
+
+      // Función para mostrar los resultados de la búsqueda
+      function mostrarResultados(resultados) {
+        const resultadosDiv = document.getElementById("resultadosBusqueda");
+        resultadosDiv.innerHTML = "";
+
+        if (resultados.length > 0) {
+          for (let i = 0; i < resultados.length; i++) {
+            resultadosDiv.appendChild(resultados[i]);
+          }
+        } else {
+          resultadosDiv.textContent = "No se encontraron resultados.";
+        }
+      }
+
+      // Evento para realizar la búsqueda al escribir en el campo de búsqueda
+      document.getElementById("busqueda").addEventListener("input", buscar);
     </script>
-
-
 
 
 

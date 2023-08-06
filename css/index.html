@@ -48,6 +48,8 @@
     <li><a href="index.html#selectores"> Selectores </a></li>
     <li><a href="index.html#selectores-avanzados">Selectores Avanzados (hijos, hermanos, atributos & universal)</a></li>
     <li><a href="index.html#pseudoclases"> Pseudo Clase Estado </a></li>
+    <li><a href="index.html#pseudoporcriterio"> Pseudo Clase por criterio </a></li>
+
 
   </ol>
   <hr>
@@ -313,7 +315,7 @@ div {
       representan con un colon (:) seguido del nombre del estado. Algunos ejemplos comunes de pseudo-clases de estado
       son: <br>
     <details>
-      <summary> Tipos de pseudoclases </summary>
+      <summary> Pseudoclases Interactivas </summary>
       </p>
       <ol>
         <li><b>:hover</b>Aplica estilos cuando el mouse está sobre el elemento.</li>
@@ -356,7 +358,6 @@ div {
         <a href="#seccion4">Sección 4</a>
         <P>
           El orden muy importante: <br>
-
           .menu-pseudoclases a:visited { <br>
           color: olive; <br>
           } <br>
@@ -391,10 +392,125 @@ div {
         <br>
         </P>
       </nav>
-
     </details>
-    <a href="index.html#temario-css">🔝</a>
   </article>
+
+  <article id="pseudoporcriterio">
+    <details>
+      <summary> Posición del elemento respecto del lugar en el cual está</summary>
+      <small>
+        <ol>
+          <li>
+            <strong>.lista-pseudoclases li:first-child:</strong> <i><b>(Mú de Aries)</b></i> Esta regla se aplicará al
+            primer elemento
+            li que sea hijo de su padre con la clase "lista-pseudoclases". El color del texto se establecerá en verde.
+          </li>
+          <li>
+            <strong>.lista-pseudoclases li:last-child:</strong> <i><b>(Afordita de Piscis)</b></i> Esta regla se
+            aplicará al último
+            elemento li que sea hijo de su padre con la clase "lista-pseudoclases". El color del texto se establecerá en
+            violeta.
+          </li>
+          <li>
+            <strong>.lista-pseudoclases li:nth-child(3):</strong> <i><b>(Saga & Kanon de Géminis)</b></i> Esta regla se
+            aplicará al
+            tercer elemento li que sea hijo de su padre con la clase "lista-pseudoclases". El color del texto se
+            establecerá en azul marino (navy).
+          </li>
+          <li>
+            <strong>.lista-pseudoclases li:nth-child(4n):</strong> <i><b>(Milo de Escorpión)</b></i> Esta regla se
+            aplicará a cada
+            cuarto elemento li que sea hijo de su padre con la clase "lista-pseudoclases". El tamaño de fuente se
+            establecerá en 20px.
+          </li>
+          <li>
+            <strong>.lista-pseudoclases li:nth-child(3n + 1):</strong> <i><b>(Mú de Aries, Death Mask de Cáncer, Aioria
+                de
+                Leo, Dohko de Libra, Camus de Acuario)</b></i> Esta regla se aplicará a cada tercer elemento li que sea
+            hijo de su
+            padre con la clase "lista-pseudoclases", comenzando desde el primer elemento. El texto se mostrará en
+            negrita (font-weight: bold).
+          </li>
+          <li>
+            <strong>.lista-pseudoclases li:nth-child(even):</strong> <i> <b> (Aldebarán de Tauro, Death Mask de Cáncer,
+                Shaka de
+                Virgo, Milo de Escorpión, Shura de Capricornio)</b></i> Esta regla se aplicará a cada elemento li que
+            sea hijo de su
+            padre con la clase "lista-pseudoclases" y tenga un índice par. El fondo se establecerá en amarillo.
+          </li>
+          <li>
+            <strong>.lista-pseudoclases li:nth-child(odd):</strong> <i><b>(Mú de Aries, Saga & Kanon de Géminis, Aioria
+                de
+                Leo, Dohko de Libra, Aioros de Sagitario, Camus de Acuario)</b></i> Esta regla se aplicará a cada
+            elemento li que
+            sea hijo de su padre con la clase "lista-pseudoclases" y tenga un índice impar. El fondo se establecerá en
+            naranja.
+          </li>
+        </ol>
+      </small>
+      <ul class="lista-pseudoclases">
+        <li>Mú de Aries</li>
+        <li>Aldebarán de Tauro</li>
+        <li>Saga & Kanon de Géminis</li>
+        <li>Death Mask de Cáncer</li>
+        <li>Aioria de Leo</li>
+        <li>Shaka de Virgo</li>
+        <li>Dohko de Libra</li>
+        <li>Milo de Escorpión</li>
+        <li>Aioros de Sagitario</li>
+        <li>Shura de Capricornio</li>
+        <li>Camus de Acuario</li>
+        <li>Afordita de Piscis</li>
+      </ul>
+      <hr>
+      <small>
+        <ol>
+          <li>
+            <strong>.articulo-pseudoclases p:first-of-type:</strong> Esta regla se aplicará al primer párrafo "p" que
+            sea hijo de su padre con la clase "articulo-pseudoclases". El fondo se establecerá en rosa.
+          </li>
+          <li>
+            <strong>.articulo-pseudoclases p:last-of-type:</strong> Esta regla se aplicará al último párrafo "p" que sea
+            hijo de su padre con la clase "articulo-pseudoclases". El fondo se establecerá en violeta.
+          </li>
+          <li>
+            <strong>.articulo-pseudoclases p:nth-of-type(3):</strong> Esta regla se aplicará al tercer párrafo "p" que
+            sea hijo de su padre con la clase "articulo-pseudoclases". El fondo se establecerá en fucsia.
+          </li>
+          <li>
+            <strong>.articulo-pseudoclases *:not(p):</strong> Esta regla se aplicará a cualquier elemento que sea hijo
+            de su padre con la clase "articulo-pseudoclases", excepto los párrafos "p". El fondo se establecerá en
+            beige.
+          </li>
+
+        </ol>
+      </small>
+      <article class="articulo-pseudoclases">
+        <header>Esto es una header</header>
+        <p>Esto es un p</p>
+        <div>Esto es una div</div>
+        <p>Esto es un p</p>
+        <section>Esto es una section</section>
+        <p>Esto es un p</p>
+        <div>Esto es un div</div>
+        <p>Esto es un p</p>
+        <footer>Esto es un footer</footer>
+      </article>
+      <a href="index.html#temario-css">☝️</a>
+  </article>
+
+  </details>
+  </article>
+
+
+
+
+  <a href="index.html#temario-css">🔝</a>
+
+
+
+
+
 
 </body>
 
