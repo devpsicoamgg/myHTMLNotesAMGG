@@ -67,7 +67,7 @@
   background-color: midnightblue;
 }
 
-/* El comodín del | aplica el estilo si contiene el texto en cuestión en una lista separada por espacios y que despues del texto en cuestión venga un guión medio - */
+/* El comodín del | aplica el estilo si contiene el texto en cuestión en una lista separada por espacios y que después del texto en cuestión venga un guion medio - */
 .selectores-atributos a[class|="menu"] {
   font-style: italic;
 }
@@ -216,4 +216,40 @@
   font-size: 20px;
   display: block;
   width: 300px;
+}
+
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:hover {
+  background-color: #b8f4ba;
+  border: 3px solid #ffb0b0;
+}
+
+caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }

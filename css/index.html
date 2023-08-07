@@ -57,10 +57,12 @@
 		<li><a href="index.html#selectores"> Selectores </a></li>
 		<li><a href="index.html#selectores-avanzados">Selectores Avanzados (hijos, hermanos, atributivos &
 				universal)</a>
+
 		</li>
 		<li><a href="index.html#pseudoclases"> Pseudo Clase Estado </a></li>
 		<li><a href="index.html#pseudoelementos"> Pseudo elementos </a></li>
 		<li><a href="index.html#especificidad-selectores"> Especificidad </a></li>
+		<li><a href="./box-model.html"> Modelo de caja </a>
 	</ol>
 	<hr>
 
@@ -154,33 +156,81 @@ div {
 								<tr>
 									<th>Selector</th>
 									<th>Peso Especificidad</th>
+									<th>Características</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Etiquetas y pseudoelementos</td>
 									<td>0,0,0,1</td>
+									<td>
+										<p>Selectores de etiquetas: Por ejemplo, p, h1,
+											div, etc.</p>
+										<p>Pseudoelementos: Por ejemplo, ::before,
+											::after, ::first-line, etc.</p>
+									</td>
 								</tr>
 								<tr>
 									<td>Clases, atributos y pseudoclases</td>
 									<td>0,0,1,0</td>
+									<td>
+										<p>Los selectores de clase se aplican a todos los
+											elementos que tienen la clase especificada.
+										</p>
+										<p>Los selectores de atributo se aplican a todos
+											los elementos que tienen el atributo
+											especificado.</p>
+										<p>Las pseudoclases se utilizan para aplicar
+											estilos a elementos en función de su estado
+											o posición.</p>
+									</td>
 								</tr>
 								<tr>
 									<td>Identificadores</td>
 									<td>0,1,0,0</td>
+									<td>
+										<p>Los selectores de ID se aplican a un único
+											elemento que tenga el identificador
+											especificado.</p>
+										<p>Es importante mencionar que el uso excesivo de
+											selectores de ID puede llevar a problemas
+											de especificidad y dificultades en el
+											mantenimiento del código.</p>
+									</td>
 								</tr>
 								<tr>
 									<td>Estilos en línea</td>
 									<td>1,0,0,0</td>
+									<td>
+										<p>Los estilos en línea se definen directamente en
+											la etiqueta HTML utilizando el atributo
+											style.</p>
+										<p>Tienen la mayor especificidad y se aplican
+											directamente al elemento, lo que los hace
+											difíciles de anular mediante otras reglas
+											CSS.</p>
+									</td>
 								</tr>
 								<tr>
 									<td><code>!important</code></td>
 									<td>Rompe la especificidad</td>
+									<td>
+										<p>Agregar !important a una regla de estilo le
+											otorga la máxima especificidad.</p>
+										<p>Esto significa que esta regla se aplicará
+											incluso si hay otras reglas con mayor
+											especificidad.</p>
+										<p>Se recomienda utilizar !important con
+											precaución, ya que puede dificultar la
+											resolución de conflictos y llevar a
+											problemas de mantenimiento.</p>
+									</td>
 								</tr>
 							</tbody>
 						</table>
 					</dd>
 				</dl>
+
 				<br>
 			</details>
 			<li><strong>La Herencia.</strong></li>
@@ -193,9 +243,7 @@ div {
 				<code>initial</code>.
 			</details>
 		</ol>
-	</article>
-
-	<a href="index.html#temario-css">🔝</a>
+		<a href="index.html#temario-css">🔝</a>
 	</article>
 	<hr>
 
@@ -325,7 +373,7 @@ div {
 			<summary>Selectores de hermanos general (~)</summary>
 			<p> El selector de hermanos (~) selecciona todos los elementos hermanos que siguen a un elemento
 				específico
-				(Esten
+				(Estén
 				por debajo), sin
 				importar si son directos o no. <br>
 				<small> .hermanos-general ~ li { <br>
@@ -418,7 +466,7 @@ div {
 						separada
 						por
 						espacios y que
-						despues del texto en cuestión venga un guión medio - </b>
+						después del texto en cuestión venga un guion medio - </b>
 					<br>
 					.selectores-atributos a[class|="menu"] { <br>
 					font-style: italic; <br>
@@ -746,15 +794,12 @@ div {
 	<hr>
 
 
-	<article id="especificidad-selectores">
-		<h2> Especificidad</h2>
-		<a href="index.html#temario-css">🔝</a>
-	</article>
 
 
 
-	<hr>
+
 	<a href="index.html#temario-css">🔝</a>
+	<hr>
 
 
 
