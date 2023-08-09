@@ -6,33 +6,36 @@ body {
   background-color: #f2f2f2;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
+
+.color-list {
+  list-style-type: decimal;
+  padding: 20px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
 }
 
-.explanation {
-  flex: 1;
-  padding: 20px;
-  background-color: #f0f7fa;
-  border-radius: 10px;
+.color-item {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.color-palette {
-  flex: 1;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.color-item:hover {
+  background-color: #007bff;
+  color: #fff;
 }
+
 
 /* Estilos para la paleta de colores */
 .paleta {
   margin-top: 20px;
+  flex: 1;
+  padding: 20px;
+  background-color: #fee8e8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .paleta summary {
@@ -56,6 +59,7 @@ table td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ccc;
+  background-color: #9c9c9c;
 }
 
 .color-box {
@@ -63,10 +67,6 @@ table td {
   height: 20px;
 }
 
-/* Estilo especial para la paleta de colores blancos */
-.blanco th {
-  background-color: #f5f5f5;
-}
 
 .blanco td {
   position: relative;
@@ -86,8 +86,11 @@ table td {
 
 /* Estilos para el contenido */
 h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 25px;
+  padding: 0;
+  background-color: #f2f2f2;
+  text-align: center;
 }
 
 h2 {
