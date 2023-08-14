@@ -27,6 +27,12 @@
       text-align: center;
     }
 
+    h1:hover,
+    details:hover {
+      background-color: #b8f4ba;
+      border: 3px solid #ffb0b0;
+    }
+
     h2 {
       color: #007bff;
       text-align: center;
@@ -219,8 +225,16 @@
         </summary> Para organizar bloques o secciones de contenido
         <ul>
           <summary> <b> <code>&lt;dl&gt;</code> </b> <br> Es una definición esta asociado con una lista descriptiva se
-            relaciona dd.
-            GLOSARIO DE TERMINOS. 3 etiquetas. dt para definir el termino, dd la definición del dato </summary> <br>
+            relaciona dd.<br>
+            GLOSARIO DE TÉRMINOS. 3 etiquetas. dt para definir el termino, dd la definición del dato <br>
+            <dl style="display: inline-block; border: 1cap double red; padding: 16px ;">
+              dl
+              <dt> Término 1 dt</dt>
+              <dd> Definición del termino 1 dd </dd>
+              <dt> Término 2 dt </dt>
+              <dd> Definición del término 2 dd </dd>
+            </dl>
+          </summary> <br>
           <summary> <b> <code>&lt;dt&gt;</code> </b> <br> Término en una descripción o lista de definiciones Definición
             Term.
           </summary> <br>
@@ -293,7 +307,7 @@
         </summary> significado, estructura, o el estilo de una palabra, una línea o cualquier pieza arbitraria de texto.
         <ul>
           <summary> <b> <code>&lt;a&gt;</code> </b> <br> enlaces a otras pags href para el source para abrir en nueva
-            pesataña < a href=" bbbb"=> , con target ="_blanck", rel="nofollow" para sitios no relacionados, si dentro
+            pestaña < a href=" bbbb"=> , con target ="_blank", rel="nofollow" para sitios no relacionados, si dentro
               dejas una
               img te hace la img como hipervinculo. <br>
               Para hacer navegación interna, emoji 😉 o texto. tabla para asociar los items a a donde ir se debe dar
@@ -303,7 +317,8 @@
           </summary> <br>
           <summary> <b> <code>&lt;abbr&gt;</code> </b> <br> abrebiaciones </summary> <br>
           <summary> <b> <code>&lt;b&gt;</code> </b> <br> Negrita <b>NEGRITA ASÍ </b> </summary> <br>
-          <summary> <b> <code>&lt;bdi&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
+          <summary> <b> <code>&lt;bdi&gt;</code> </b> <br> Muestra en tipo código pero tener presente que </summary>
+          <br>
           <summary> <b> <code>&lt;bdo&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
           <summary> <b> <code>&lt;br&gt;</code> </b> <br> Salto de linea. UN SOLO TAG, NO NECESITA CIERRE </summary>
           <br>
@@ -395,8 +410,10 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63654.152374169564!2d-74.38432945000001!3d4.33870455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f04f7770f3b97%3A0x90b173ecbe09c570!2sFusagasug%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1688433929328!5m2!1ses!2sco"
               width=60% height=20% style="border:1;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe> </summary> <br>
-          <summary> <b> <code>&lt;object&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
-          <summary> <b> <code>&lt;picture&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
+          <summary> <b> <code>&lt;object&gt;</code> </b> <br> Para incrustar tipos de objeto, como pdf, video, etc
+          </summary><br>
+          <summary> <b> <code>&lt;picture&gt;</code> </b> <br> EXPERIMENTAL. Contenedor de múltiples elementos.
+          </summary> <br>
           <summary> <b> <code>&lt;portal&gt;</code> </b> <br> Habilita incrustar htmls en otra pag </summary> <br>
           <summary> <b> <code>&lt;source&gt;</code> </b> <br> recursos multimedia <code>&lt;picture&gt;</code>,
             <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code>
@@ -415,8 +432,10 @@
 
         </summary>
         <ul>
-          <summary> <b> <code>&lt;svg&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
-          <summary> <b> <code>&lt;math&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary> <b> <code>&lt;svg&gt;</code> </b> <br> Para agregar gráficos de vector </summary> <br>
+          <summary> <b> <code>&lt;math&gt;</code> </b> <br> Secciones o Temas con cálculos y matemáticas.
+            <code>&lt;math&gt;</code> es la que engloba
+          </summary>
         </ul>
       </details>
     </li>
@@ -432,9 +451,9 @@
 
         </summary>
         <ul>
-          <summary> <b> <code>&lt;canvas&gt;</code> </b> <br> dibujar graficos por secuencias </summary> <br>
-          <summary> <b> <code>&lt;noscript&gt;</code> </b> <br> Secciones o contenidos </summary> <br>
-          <summary> <b> <code>&lt;script&gt;</code> </b> <br> incrustar codigo ejecutable, puede ser js, se puede
+          <summary> <b> <code>&lt;canvas&gt;</code> </b> <br> dibujar gráficos por secuencias </summary> <br>
+          <summary> <b> <code>&lt;noscript&gt;</code> </b> <br> Lo que no es script </summary> <br>
+          <summary> <b> <code>&lt;script&gt;</code> </b> <br> incrustar código ejecutable, puede ser js, se puede
             escribir como js en html mientras tengas la etiqueta script o por medio de enlazar html y js. apertura y
             cierre script src=/source </summary>
         </ul>
@@ -451,8 +470,8 @@
 
         </summary>
         <ul>
-          <summary> </b> <code>&lt;del&gt;</code> </b> <br> Secciones o contenidos </summary>
-          <summary> </b> <code>&lt;ins&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary> </b> <code>&lt;del&gt;</code> </b> <br> elemento eliminado en en cursiva sale </summary>
+          <summary> </b> <code>&lt;ins&gt;</code> </b> <br> Elemento ingresado en subrayado sale </summary>
         </ul>
       </details>
     </li>
@@ -478,7 +497,7 @@
           <summary><b><code>&lt;caption&gt;</code> </b> <br> Se utiliza para agregar un titulo a la tabla puede estar
             aariba o abajo segun el style se defina. </summary> <br>
           <summary><b><code>&lt;col&gt;</code> </b> <br> Define propiedades de estilo y da la col </summary> <br>
-          <summary><b><code>&lt;colgrup&gt;</code> </b> <br> Agrupa una o mas colomnas </summary> <br>
+          <summary><b><code>&lt;colgrup&gt;</code> </b> <br> Agrupa una o mas columnas </summary> <br>
           <summary><b><code>&lt;table&gt;</code> </b> <br> Tag que contiene la tabla </summary> <br>
           <summary><b><code>&lt;tbody&gt;</code> </b> <br> agrupa una tabla en su cuerpo </summary> <br>
           <summary><b><code>&lt;td&gt;</code> </b> <br> Celdas </summary> <br>
@@ -515,7 +534,8 @@
         <ul>
           <summary><b><code>&lt;button&gt;</code> </b> <br> Un boton <button> ESTE </button> </summary>
           <summary><b><code>&lt;datalist&gt;</code> </b> <br> Contiene elementos, opciones </summary>
-          <summary><b><code>&lt;fielset&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary><b><code>&lt;fielset&gt;</code> </b> <br> Ordenar los grupos de campo de un formulario, crea una caja
+            de formulario en bloque</summary>
           <summary><b><code>&lt;form&gt;</code> </b> <br> la que contiene controles activos </summary>
           <summary><b><code>&lt;input&gt;</code> </b> <br> Controles interactivos de formulario. < imput así: <br>
               <samll>
@@ -534,17 +554,19 @@
                 button <input type="button" value="este"> <br>
               </samll>
           </summary>
-          <summary><b><code>&lt;label&gt;</code> </b> <br> Secciones o contenidos </summary>
-          <summary><b><code>&lt;legend&gt;</code> </b> <br> Secciones o contenidos </summary>
+          <summary><b><code>&lt;label&gt;</code> </b> <br> La etiqueta, el "nombre" </summary>
+          <summary><b><code>&lt;legend&gt;</code> </b> <br> Crea títulos para grupos de campos. Caja con titulo.
+          </summary>
           <summary><b><code>&lt;meter&gt;</code> </b> <br> escala dentro de un rango </summary>
           <summary><b><code>&lt;optgroup&gt;</code> </b> <br> agrupación <code>&lt;select&gt;</code> </summary>
           <summary><b><code>&lt;option&gt;</code> </b> <br> item dentro de un <code>&lt;select&gt;</code> </summary>
-          <summary><b><code>&lt;output&gt;</code> </b> <br> puede inyectar resultados de calculos </summary>
-          <summary><b><code>&lt;progress&gt;</code> </b> <br> muestra prograso de una tarea </summary>
-          <summary><b><code>&lt;select&gt;</code> </b> <br> menu de opciones las opciones estan dentro de
+          <summary><b><code>&lt;output&gt;</code> </b> <br> puede inyectar resultados de cálculos </summary>
+          <summary><b><code>&lt;progress&gt;</code> </b> <br> muestra progreso de una tarea </summary>
+          <summary><b><code>&lt;select&gt;</code> </b> <br> menu de opciones las opciones están dentro de
             <code>&lt;option&gt;</code> que generalmente se agrupan en <code>&lt;optgroup&gt;</code>
           </summary>
-          <summary><b><code>&lt;textarea&gt;</code> </b> <br> edución multililnea de texto sin formato </summary>
+          <summary><b><code>&lt;textarea&gt;</code> </b> <br> Edición multilineal de texto sin formato
+          </summary>
         </ul>
       </details>
     </li>
@@ -596,11 +618,11 @@
       <details>
         <summary>Styles CSS en HTML 3 formas </summary> XXXXXXXXXXX
         <ul>
-          <summary> <b> dando atributos onclick="Alert" </b> <br> No muy recomdable </summary> <br>
-          <summary> <b> En head se abre etiqueta style </b> <br> LIBRERIAS se van marcando etiquetas por etiquetas pero
+          <summary> <b> dando atributos onclick="Alert" </b> <br> No muy recomendable </summary> <br>
+          <summary> <b> En head se abre etiqueta style </b> <br> LIBRERíAS se van marcando etiquetas por etiquetas pero
             marca
             todas las etiquetas </summary> <br>
-          <summary> <b> Mediente hoja CSS </b> <br> Se enlaza en el head con tag link rel = "stylesheets" href="./DIR"
+          <summary> <b> Mediante hoja CSS </b> <br> Se enlaza en el head con tag link rel = "stylesheets" href="./DIR"
           </summary> <br>
         </ul>
       </details>
@@ -613,10 +635,10 @@
         <summary> Eventos </summary>
         <ul>
           <summary> <b> dando atributos al tag style= </b> style = " color fondo, color letra, tamaño, tipo, fuente,
-            alineación, epaciado, margen, para tags como NO MANERA MÁS EFICIENTE " </summary> <br>
-          <summary> <b> En head se abre etiqueta style </b> LIBRERIAS se van marcando etiquetas por etiquetas pero marca
+            alineación, espaciado, margen, para tags como NO MANERA MÁS EFICIENTE " </summary> <br>
+          <summary> <b> En head se abre etiqueta style </b> LIBRERÍAS se van marcando etiquetas por etiquetas pero marca
             todas las etiquetas </summary> <br>
-          <summary> <b> Mediente hoja CSS </b> se enlaza en el head con tag link rel = "stylesheets" href="./DIR"
+          <summary> <b> Mediante hoja CSS </b> se enlaza en el head con tag link rel = "stylesheets" href="./DIR"
           </summary> <br>
         </ul>
       </details>
@@ -627,7 +649,7 @@
 
     <button onclick="openDialog()">02-. Metadatod del Doc </button>
     <dialog id="myDialog">
-      <h2>Tags Raiz Pcpal </h2>
+      <h2>Tags Raíz Pcpal </h2>
       <p> <code> &lt;!DOCTYPE html&gt; </code> </p>
       <hr>
       <p> <code>&lt;html lang="es"&gt;</code> </p>
@@ -642,15 +664,15 @@
         var dialog = document.getElementById("myDialog");
         dialog.close();
       }
-    </script>
+    </script> <br><br><br><br><br>
+
+    <a href="../css/indexcss.html" target="_blank">🔝 - CONTINUAR CON CSS- </a>
 
 
-
-
-    <!-- FIN ⛔-->
     </ul>
 
   </ol>
+  <!-- FIN ⛔-->
 
 </body>
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fonts.css">
+  <title>Estilos de Fuentes y Textos</title>
+</head>
+<section>
+  <h2>Fuentes Externas</h2>
+  <p>Una forma de personalizar las fuentes de tus elementos es a través de las fuentes externas. Esto se puede lograr
+    utilizando la regla <code>@font-face</code> en CSS:</p>
+  <code class="code">
+    @font-face { <br>
+      font-family: 'MiFuente'; <br>
+      src: url('ruta/a/mi-fuente.woff2') format('woff2'), <br>
+           url('ruta/a/mi-fuente.woff') format('woff'); <br>
+      /* Otros atributos como font-weight y font-style */ <br>
+    } <br>
+    <br>
+    body { <br>
+      font-family: 'MiFuente', sans-serif; <br>
+    } <br>
+  </code>
+  <p>En este ejemplo, hemos definido la fuente personalizada 'MiFuente' y la estamos aplicando al cuerpo del documento.
+  </p>
+</section>
+
+<section>
+  <h2>Google Fonts</h2>
+  <p>Google Fonts ofrece una amplia variedad de fuentes web listas para usar. Puedes agregar una fuente de Google Fonts
+    en tu sitio web de la siguiente manera:</p>
+  <pre class="code">
+    &lt;link href="https://fonts.googleapis.com/css2?family=Nombre+de+Fuente" rel="stylesheet"&gt; 
+    /* En CSS */ 
+    body { 
+      font-family: 'Nombre de Fuente', sans-serif; 
+    } 
+  </pre>
+  <p>En este caso, hemos enlazado la fuente 'Nombre de Fuente' desde Google Fonts y la aplicamos al cuerpo del
+    documento.</p>
+</section>
+
+<section>
+  <h2>Estilos de Texto</h2>
+  <p>Aplicar estilos de texto es esencial para mejorar la legibilidad y el diseño de tu contenido. Aquí hay algunos
+    ejemplos:</p>
+  <code class="code">
+    /* Cambiar color y tamaño de fuente */  <br>
+    p { <br>
+      color: #333; <br>
+      font-size: 18px; <br>
+    } <br>
+    /* Texto en negrita */ <br>
+    strong { <br>
+      font-weight: bold; <br>
+    } <br>
+    /* Texto cursiva */ <br>
+    em { <br>
+      font-style: italic; <br>
+    } <br>
+    /* Subrayado */ <br>
+    u { <br>
+      text-decoration: underline; <br>
+    } <br>
+  </code>
+  <p>En este segmento, estamos cambiando el color y el tamaño de fuente de los párrafos, aplicando negrita a elementos
+    &lt;strong&gt;, cursiva a elementos &lt;em&gt; y subrayado a elementos &lt;u&gt;.</p>
+</section>
+
+<section>
+  <h2>Iconos Tipográficos</h2>
+  <p>Los iconos tipográficos son una forma creativa de enriquecer tu contenido. Un ejemplo es el uso de Font Awesome:
+  </p>
+  <pre class="code">
+    HTML 
+        &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+    /* En CSS (si se necesita estilizar) */ 
+    .fas {
+      font-family: 'Font Awesome 5 Free';
+    }
+  </pre>
+  <p>En este caso, hemos utilizado un icono de corazón de Font Awesome y hemos asignado la clase &lt;i class="fas
+    fa-heart"&gt; para aplicar el icono.</p>
+</section>
+
+<section>
+  <h2>Propiedades Border y Border-Radius</h2>
+  <p>Las propiedades de borde y borde redondeado son útiles para darle estilo a los elementos. Aquí tienes un ejemplo:
+  </p>
+  <pre class="code">
+    /* Bordes */
+    .border-example {
+      border: 1px solid #ddd;
+    }
+    /* Bordes redondeados */
+    .rounded-example {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+  </pre>
+  <p>En este fragmento, hemos aplicado un borde de 1px sólido y un borde redondeado de 10px a los elementos con las
+    clases .border-example y .rounded-example, respectivamente.</p>
+</section>
+
+
+<a href="index.html#temario-css">🔝</a>
+
+</body>
+
+</html>
