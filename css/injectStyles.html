@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Botón con cambio de estilo</title>
+  <style>
+    #btn-estilo {
+      background-color: lightgray;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Botón que cambia de estilo</h2>
+  <button id="btn-estilo">Haz clic para cambiar estilo</button>
+
+  <pre
+    style="background-color: #1e1e1e; color: #d4d4d4; padding: 1em; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 15px; overflow-x: auto;">
+    <code>
+    &lt;body&gt;
+
+      &lt;h2&gt;Botón que cambia de estilo&lt;/h2&gt;
+      &lt;button id="btn-estilo"&gt;Haz clic para cambiar estilo&lt;/button&gt;
+
+      &lt;script&gt;<br>
+        <span style="color:#569CD6;">const</span> <span style="color:#9CDCFE;">boton</span> = document.getElementById(<span style="color:#CE9178;">'btn-estilo'</span>);<br><br>
+
+        <span style="color:#9CDCFE;">boton</span>.addEventListener(<span style="color:#CE9178;">'click'</span>, <span style="color:#C586C0;">function</span> () {<br>
+          <span style="color:#6A9955;">// Si el botón aún no tiene el estilo cambiado</span><br>
+          <span style="color:#C586C0;">if</span> (this.style.backgroundColor !== <span style="color:#CE9178;">'green'</span>) {<br>
+            &nbsp;&nbsp;this.style.backgroundColor = <span style="color:#CE9178;">'green'</span>;<br>
+            &nbsp;&nbsp;this.style.color = <span style="color:#CE9178;">'white'</span>;<br>
+            &nbsp;&nbsp;this.style.fontSize = <span style="color:#CE9178;">'20px'</span>;<br>
+            &nbsp;&nbsp;this.textContent = <span style="color:#CE9178;">'Estilo aplicado'</span>;<br>
+          } <span style="color:#C586C0;">else</span> {<br>
+            &nbsp;&nbsp;<span style="color:#6A9955;">// Volver al estilo original</span><br>
+            &nbsp;&nbsp;this.style.backgroundColor = <span style="color:#CE9178;">'lightgray'</span>;<br>
+            &nbsp;&nbsp;this.style.color = <span style="color:#CE9178;">'black'</span>;<br>
+            &nbsp;&nbsp;this.style.fontSize = <span style="color:#CE9178;">'16px'</span>;<br>
+            &nbsp;&nbsp;this.textContent = <span style="color:#CE9178;">'Haz clic para cambiar estilo'</span>;<br>
+          }<br>
+        });<br>
+      &lt;/script&gt;
+
+    &lt;/body&gt;
+    </code>
+    </pre>
+
+
+  <a href="indexcss.html#temario-css">🔝</a>
+
+  <script>
+    const boton = document.getElementById('btn-estilo');
+
+    boton.addEventListener('click', function () {
+      // Si el botón aún no tiene el estilo cambiado
+      if (this.style.backgroundColor !== 'green') {
+        this.style.backgroundColor = 'green';
+        this.style.color = 'white';
+        this.style.fontSize = '20px';
+        this.textContent = 'Estilo aplicado';
+      } else {
+        // Volver al estilo original
+        this.style.backgroundColor = 'lightgray';
+        this.style.color = 'black';
+        this.style.fontSize = '16px';
+        this.textContent = 'Haz clic para cambiar estilo';
+      }
+    });
+  </script>
+
+</body>
+
+</html>

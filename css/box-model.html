@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Caja en CSS y HTML</title>
+  <link rel="stylesheet" href="stylesbox.css">
+</head>
+
+<body>
+  <h1>Modelo de Caja en CSS y HTML</h1>
+  <p>
+    El modelo de caja en CSS y HTML es un concepto fundamental que define cómo se representan y se comportan los
+    elementos en una página web. Cada elemento HTML se considera una caja rectangular, y el modelo de caja describe cómo
+    se calcula el tamaño total de la caja y cómo se distribuyen los elementos dentro de ella.
+  </p>
+  <div class="caja">
+    <details>
+      <summary class="summary">
+        Width y Height ➡️ ancho y alto.
+      </summary>
+      <p>
+        La propiedad <code>width</code> determina el ancho del contenido de la caja, mientras que la propiedad
+        <code>height</code> determina la altura del contenido. Estas propiedades no incluyen el padding, margin o border
+        del elemento, solo el contenido interno. <br>
+        <hr>
+      </p>
+    </details>
+  </div>
+  <div class="caja">
+    <details>
+      <summary class="summary">Padding ➡️ Distancias internas / borde al contenido. </summary>
+      <p>
+        El padding es el espacio entre el contenido de la caja y su borde. Se puede definir usando la propiedad
+        <code>padding</code> o las propiedades <code>padding-top</code>, <code>padding-right</code>,
+        <code>padding-bottom</code> y <code>padding-left</code> por separado.
+      </p>
+    </details>
+  </div>
+  <div class="caja">
+    <details>
+      <summary class="summary">Margin ➡️ son las distancias externas / entre el HTML y sus elementos hermanos o padres.
+      </summary>
+      <p>
+        El margin es el espacio entre una caja y otras cajas cercanas. Se puede definir usando la propiedad
+        <code>margin</code> o las propiedades <code>margin-top</code>, <code>margin-right</code>,
+        <code>margin-bottom</code> y <code>margin-left</code> por separado. Los márgenes se colapsan cuando dos
+        elementos
+        con márgenes se superponen, tomando el valor del margen más grande.
+      </p>
+    </details>
+  </div>
+  <div class="caja">
+    <details>
+      <summary class="summary">Border ➡️ Lo que delimita c/u de los tags</summary>
+      <p>
+        El border es el borde que rodea la caja. Se puede definir utilizando la propiedad <code>border</code> o sus
+        propiedades específicas como:
+      <ol>
+        <li>border-width - Ancho </li>
+        <li>border-color - Color </li>
+        <li>border-style - Estilos </li>
+      </ol>
+      El border separa el contenido de la caja del margen externo y se representa como una línea sólida, punteada, doble
+      o de otros estilos.
+      <hr>
+      <ul>
+        <small>
+          <li><b>none:</b> No se muestra ningún borde.</li>
+          <li><b>hidden:</b> Igual que none, pero se comporta de manera diferente en ciertos casos.</li>
+          <li><b>dotted:</b> Crea un borde punteado.</li>
+          <li><b>dashed:</b> Crea un borde con líneas discontinuas.</li>
+          <li><b>solid:</b> Crea un borde sólido.</li>
+          <li><b>thin:</b> Crea un borde de 1px.</li>
+          <li><b>medium:</b> Crea un borde de 3px.</li>
+          <li><b>double:</b> Crea un borde doble con dos líneas sólidas.</li>
+          <li><b>groove:</b> Crea un borde tallado en 3D.</li>
+          <li><b>ridge:</b> Crea un borde en relieve en 3D.</li>
+          <li><b>inset:</b> Crea un borde con apariencia de estar hundido.</li>
+          <li><b>outset:</b> Crea un borde con apariencia de estar sobresalido.</li>
+        </small>
+      </ul>
+      </p>
+    </details>
+  </div>
+
+  <a href="./indexcss.html" class="back-link">Inicio</a>
+</body>
+
+</html>

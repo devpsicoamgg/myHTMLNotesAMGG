@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="variables.css">
+  <title>Ejemplo de Funciones en CSS</title>
+</head>
+
+<body>
+  <h1>Ejemplo de Funciones en CSS</h1>
+
+  <div class="container">
+    <div class="box">
+      <h2>Función Normal</h2>
+      <p>Esta caja utiliza estilos CSS estándar sin ninguna función especial aplicada.</p>
+    </div>
+
+    <div class="box var-example" style="--box-color: #e74c3c;">
+      <h2>Usando var()</h2>
+      <p>La función var() se utiliza para definir valores de propiedades personalizadas que se pueden reutilizar en toda
+        la hoja de estilos.</p>
+      <p>En esta caja, el color de fondo es personalizado usando así: var(--box-color) <br> <code class="code">
+.var-example { <br>
+  --box-color: #3498db; <br>
+  background-color: var(--box-color); <br>
+} <br>
+      </code></p>
+    </div>
+
+    <div class="box url-example">
+      <h2>Usando url()</h2>
+      <p>La función url() se usa comúnmente para establecer imágenes de fondo y enlaces a recursos externos como
+        fuentes.</p>
+      <p>En esta caja, la imagen de fondo se establece usando background-image: url('imagen.jpg'); <br> <br> <code
+          class="code">
+        .url-example { <br>
+          background-image: url('/css/assets/image.jpg.jpeg'); <br>
+          background-size: 60px 60px; <br>
+          background-repeat: no-repeat; <br>
+          background-position: right bottom; <br>
+          color: #110202; <br>
+        } <br>
+        
+      </code></p>
+    </div>
+
+    <div class="box calc-example">
+      <h2>Usando calc()</h2>
+      <p>La función calc() permite realizar cálculos para determinar valores de propiedades, lo que facilita el
+        diseño responsive.</p>
+      <p>En esta caja, el ancho se calcula usando width: calc(50% - 20px);<br> <code class="code-calc">
+        .calc-example { <br>
+          width: calc(50% - 20px); <br>
+          background-color: #27ae60; <br>
+          color: #fff; <br>
+        } <br>
+      </code> para tener un margen de 20px a
+        cada lado.</p>
+    </div>
+
+    <div class="box min-max-example">
+      <h2>Usando min() y max()</h2>
+      <p>Las funciones min() y max() se utilizan para asegurarse de que un valor de propiedad permanezca dentro de un
+        rango especificado.</p>
+      <p>En esta caja, la altura se establece usando height: min(200px, 50%); para que sea de al menos
+        200px o 50% del espacio disponible.</p>
+      <code class="code-der">
+          .min-max-example { <br>
+            height: min(200px, 50%); <br>
+            background-color: #f39c12; <br>
+            color: #fff; <br>
+          } <br>
+        </code>
+    </div>
+
+    <div class="box clamp-example">
+      <h2>Usando clamp()</h2>
+      <p>La función clamp() establece un valor de propiedad que cae dentro de un rango de valores, proporcionando un
+        equilibrio entre min() y max().</p>
+      <p>En esta caja, el tamaño de fuente se define usando: <br> <code class="code">
+        .clamp-example { <br>
+          font-size: clamp(12px, 2.5vw, 24px); <br>
+          background-color: #9b59b6; <br>
+          color: #fff; <br>
+        } <br>
+      </code> </p>
+    </div>
+  </div>
+  <a href="index.html#temario-css">🔝</a>
+</body>
+
+</html>

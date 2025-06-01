@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+.code {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 10px; 
+  display: inline-block; 
+}
+
+.code:hover {
+  background-color: #ffea00;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transform: scale(1.5)
+}
+
+.box.calc-example {
+  position: relative;
+}
+
+.code-calc {
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  padding: 10px; 
+  display: inline-block;
+  bottom: 20px;
+  right: 20px;
+}
+
+.code-calc:hover {
+  background-color: #ffea00;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transform: scale(1.5)
+  translateX(-30%);
+}
+
+.code-der {
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  padding: 10px; 
+  display: inline-block;
+  
+}
+
+.code-der:hover {
+  background-color: #ffea00;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+ 
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la función var() */
+.var-example {
+  --box-color: #3498db;
+  background-color: var(--box-color);
+  color: #fff;
+}
+
+.url-example {
+  background-image: url('/css/assets/image.jpg.jpeg');
+  background-size: 60px 60px; /* Cambia los valores según el tamaño deseado */
+  background-repeat: no-repeat;
+  background-position: right top;
+  color: #110202;
+}
+
+
+/* Estilos para la función calc() */
+.calc-example {
+  width: calc(50% - 20px);
+  background-color: #27ae60;
+  color: #fff;
+}
+
+/* Estilos para las funciones min() y max() */
+.min-max-example {
+  height: min(200px, 50%);
+  background-color: #f39c12;
+  color: #fff;
+}
+
+/* Estilos para la función clamp() */
+.clamp-example {
+  font-size: clamp(12px, 2.5vw, 24px);
+  background-color: #9b59b6;
+  color: #fff;
+}

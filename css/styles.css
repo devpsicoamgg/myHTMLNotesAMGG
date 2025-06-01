@@ -1,0 +1,303 @@
+/* Dar estilos con clases nos permite reutilizar nuestro código CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.identificador {
+  margin-top: 4.5em;
+  padding: 10px;
+}
+
+.ways-to-insert,
+.temario-general,
+.agrupar-selectores,
+.sintaxis,
+.algoritmo-css,
+.selectores,
+.selectores-avanzados,
+.pseudoclases,
+.pseudoelementos {
+  padding: 10px;
+}
+
+.temario-general,
+.selector {
+  list-style-type: upper-roman;
+  margin-left: 2em;
+}
+
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.text-9 {
+  font-size: 9px;
+}
+
+.text-7 {
+  font-size: 7px;
+}
+
+.text-white {
+  color: white;
+}
+
+
+.hijos-directos>li>b {
+  background-color: thistle;
+}
+
+.hijos-descendientes b {
+  background-color: thistle;
+}
+
+/* Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estén por debajo del elemento de referencia */
+.hermanos-general~li {
+  background-color: thistle;
+}
+
+.hermanos-adyacentes+li {
+  background-color: thistle;
+}
+
+/* Selectores de atributos */
+.selectores-atributos a[href] {
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+}
+
+/* El comodín del * aplica el estilo si contiene el texto en cuestión en cualquier parte */
+.selectores-atributos a[href*="jonmircha"] {
+  font-size: 24px;
+}
+
+/* El comodín del ^ aplica el estilo si contiene el texto en cuestión al inicio */
+.selectores-atributos a[href^="http://"] {
+  text-decoration: none;
+}
+
+/* El comodín del $ aplica el estilo si contiene el texto en cuestión al final */
+.selectores-atributos a[href$=".com"] {
+  background-color: black;
+}
+
+/* El comodín del ~ aplica el estilo si contiene el texto en cuestión en una lista separada por espacios */
+.selectores-atributos a[class~="cursos"] {
+  background-color: midnightblue;
+}
+
+/* El comodín del | aplica el estilo si contiene el texto en cuestión en una lista separada por espacios y que después del texto en cuestión venga un guion medio - */
+.selectores-atributos a[class|="menu"] {
+  font-style: italic;
+}
+
+/* Selector Universal */
+* {
+  font-family: sans-serif;
+}
+
+.selector-universal * {
+  font-size: 24px;
+}
+
+
+
+
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+
+.form-pseudoclases *:focus {
+  background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+  background-color: pink;
+}
+
+.menu-pseudoclases a:visited {
+  color: olive;
+}
+
+.menu-pseudoclases a:hover {
+  color: orange;
+}
+
+
+.p-pseudoclases:hover {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: font-size 0.3s ease;
+  background-color: rgba(255, 10, 165, 0.919);
+  transform: scale(1.05);
+  opacity: 0.7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#temario-css:target {
+  background-color: lightgreen;
+}
+
+.lista-pseudoclases li:first-child {
+  color: green;
+}
+
+.lista-pseudoclases li:last-child {
+  color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+  color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+  font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+  font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even) {
+  background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: orange;
+}
+
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type {
+  background-color: violet;
+}
+
+.articulo-pseudoclases p:nth-of-type(3) {
+  background-color: fuchsia;
+}
+
+.articulo-pseudoclases *:not(p) {
+  background-color: beige;
+}
+
+
+.saga-geminis::before {
+  content: "🤼‍♂️";
+}
+
+.saga-geminis::after {
+  content: "♊";
+}
+
+.saga-precio::before {
+  content: "$";
+  font-weight: bold;
+}
+
+.saga-precio::after {
+  content: "USD";
+  font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.p-pseudoelementos::first-line {
+  color: coral;
+}
+
+.p-pseudoelementos::selection {
+  color: greenyellow;
+  background-color: black;
+}
+
+.input-pseudoelementos::placeholder {
+  color: green;
+}
+
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  border-color: yellow;
+  border-width: 2px;
+  border-style: dashed;
+  background-color: rgb(36, 173, 227);
+  font-size: 20px;
+  display: block;
+  width: 300px;
+}
+
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:hover {
+  background-color: #b8f4ba;
+  border: 3px solid #ffb0b0;
+}
+
+caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
